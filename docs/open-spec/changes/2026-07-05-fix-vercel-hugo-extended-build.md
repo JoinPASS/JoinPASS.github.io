@@ -55,4 +55,14 @@ Verified with:
 - `hugo build --gc --minify`
 - `curl -fsSI` against the Hugo Extended release asset URL
 
-After pushing this change, Vercel should create a new production deployment.
+After pushing commit `85b73ee`, Vercel created production deployment
+`dpl_5jF9hyQyb7iG529DS4SZJXxcNj57`, which reached `READY`.
+
+Verified the public site with:
+
+- `curl -sSIL https://joinpass.vercel.app/`
+- `curl -sSIL https://joinpass.vercel.app/zh-tw/`
+- `curl -sSIL https://joinpass.vercel.app/en/`
+
+The root URL returns `200` and redirects to `/zh-tw/`; both language home pages
+return `200` with rendered PASS content.
