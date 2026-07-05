@@ -1,0 +1,168 @@
+.jp-hero {
+  background: #f6f8fa;
+  border-bottom: 1px solid #dde6ee;
+  padding: 80px 0 64px;
+}
+
+.jp-hero-inner {
+  max-width: 980px;
+}
+
+.jp-language-switch {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.jp-language-switch span,
+.jp-language-switch a {
+  border: 1px solid #c9d7e3;
+  border-radius: 8px;
+  color: #25415b;
+  font-size: 0.92rem;
+  line-height: 1;
+  padding: 8px 11px;
+  text-decoration: none;
+}
+
+.jp-language-switch span {
+  background: #ffffff;
+  font-weight: 600;
+}
+
+.jp-language-switch a:hover {
+  background: #ffffff;
+  color: #006d77;
+}
+
+.jp-eyebrow {
+  color: #006d77;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.jp-title {
+  color: #16212b;
+  font-size: clamp(2.4rem, 6vw, 4.8rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.03;
+  margin-bottom: 22px;
+  max-width: 860px;
+}
+
+.jp-lead {
+  color: #334756;
+  font-size: 1.22rem;
+  line-height: 1.72;
+  margin-bottom: 30px;
+  max-width: 760px;
+}
+
+.jp-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.jp-actions .btn {
+  border-radius: 8px;
+  font-weight: 650;
+  min-height: 44px;
+}
+
+.jp-meta {
+  background: #1d2b34;
+  border-radius: 8px;
+  color: #ffffff;
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 920px;
+  overflow: hidden;
+}
+
+.jp-meta-item {
+  background: #243742;
+  padding: 22px;
+}
+
+.jp-meta-label {
+  color: #9fc7ce;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.jp-meta-value {
+  color: #ffffff;
+  display: block;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.jp-section {
+  padding: 64px 0;
+}
+
+.jp-section-title {
+  color: #16212b;
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.jp-section-lead {
+  color: #526676;
+  line-height: 1.7;
+  margin-bottom: 28px;
+  max-width: 720px;
+}
+
+.jp-highlight-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.jp-highlight {
+  background: #ffffff;
+  border: 1px solid #d8e2ea;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.jp-highlight .material-icons {
+  color: #006d77;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.jp-highlight h2 {
+  color: #16212b;
+  font-size: 1.06rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.jp-highlight p {
+  color: #526676;
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .jp-meta,
+  .jp-highlight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .jp-hero {
+    padding: 96px 0 44px;
+  }
+}

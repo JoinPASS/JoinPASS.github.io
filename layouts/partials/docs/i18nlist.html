@@ -1,0 +1,17 @@
+{{ $pageLang := .Page.Lang }}
+{{ $translations := slice }}
+{{ $docspath := $.Scratch.Get "pathName" }}
+
+{{ range .Translations }}
+    {{ $translations = $translations | append .Lang }}
+    <li><a class="dropdown-item" href="{{ .RelPermalink }}" role="button" rel="alternate" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ .Language.Label }}</a></li>
+{{ end }}
+
+{{ range hugo.Sites }}
+    {{ if ne $pageLang .Language.Lang }}
+        {{ if in $translations .Language.Lang }}
+        {{ else }}
+            <li><a class="dropdown-item" href="{{ .Home.RelPermalink }}{{ $docspath }}/" role="button" rel="alternate" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}">{{ .Language.Label }}</a></li>
+        {{ end }}
+    {{ end }}
+{{ end }}

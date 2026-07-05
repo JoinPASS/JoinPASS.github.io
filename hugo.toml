@@ -1,0 +1,108 @@
+baseURL = "/"
+title = "Platform for AI Sovereignty Study"
+defaultContentLanguage = "zh-tw"
+defaultContentLanguageInSubdir = true
+enableEmoji = true
+enableRobotsTXT = true
+timeZone = "Asia/Taipei"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.140.0"
+  [[module.imports]]
+    path = "github.com/colinwilson/lotusdocs"
+    disable = false
+  [[module.imports]]
+    path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
+    disable = false
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[caches]
+  [caches.images]
+    dir = ":cacheDir/images"
+
+[params]
+  description = "A professional study group for AI sovereignty and sovereign AI work in Taiwan."
+  author = "Platform for AI Sovereignty Study"
+  keywords = "sovereign AI, Taiwan, study group, AI governance, research community"
+  google_fonts = [
+    ["Inter", "300, 400, 500, 600, 700"],
+    ["Noto Sans TC", "300, 400, 500, 700"],
+    ["Fira Code", "500, 700"]
+  ]
+  sans_serif_font = "Inter"
+  secondary_font = "Noto Sans TC"
+  mono_font = "Fira Code"
+
+  [params.footer]
+    copyright = "© :YEAR: Platform for AI Sovereignty Study."
+
+  [params.social]
+    github = "cclljj/JoinPASS"
+
+  [params.docs]
+    title = "Platform for AI Sovereignty Study"
+    pathName = "docs"
+    themeColor = "cyan"
+    darkMode = true
+    prism = false
+    sidebarIcons = true
+    titleIcon = true
+    breadcrumbs = true
+    backToTop = true
+    toc = true
+    tocMobile = true
+    scrollSpy = true
+    descriptions = true
+    navDesc = true
+    navDescTrunc = 48
+    listDescTrunc = 120
+    intLinkTooltip = false
+    repoURL = "https://github.com/cclljj/JoinPASS"
+    repoBranch = "main"
+    editPage = false
+    lastMod = false
+
+  [params.flexsearch]
+    enabled = true
+    tokenize = "forward"
+    minQueryChar = 0
+    maxResult = 6
+
+[languages]
+  [languages.zh-tw]
+    title = "AI 主權研究平台"
+    label = "繁體中文"
+    locale = "zh-TW"
+    contentDir = "content/zh-tw"
+    weight = 1
+    [languages.zh-tw.params]
+      description = "PASS，一個聚焦台灣 AI 主權與主權 AI 的專業 study group。"
+    [[languages.zh-tw.menu.primary]]
+      name = "公開文件"
+      url = "docs/"
+      identifier = "docs"
+      weight = 10
+
+  [languages.en]
+    title = "Platform for AI Sovereignty Study"
+    label = "English"
+    locale = "en-US"
+    contentDir = "content/en"
+    weight = 2
+    [languages.en.params]
+      description = "PASS, a professional study group focused on AI sovereignty and sovereign AI in Taiwan."
+    [[languages.en.menu.primary]]
+      name = "Docs"
+      url = "docs/"
+      identifier = "docs"
+      weight = 10

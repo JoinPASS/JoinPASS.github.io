@@ -1,0 +1,58 @@
+{{ define "main" }}
+<section class="jp-hero">
+  <div class="container jp-hero-inner">
+    {{ if hugo.IsMultilingual }}
+      <nav class="jp-language-switch" aria-label="{{ i18n "lang_select_title" }}">
+        <span>{{ .Site.Language.Label }}</span>
+        {{ range .Translations }}
+          <a href="{{ .RelPermalink }}" rel="alternate" hreflang="{{ .Lang }}">{{ .Language.Label }}</a>
+        {{ end }}
+      </nav>
+    {{ end }}
+
+    <p class="jp-eyebrow">{{ .Params.eyebrow }}</p>
+    <h1 class="jp-title">{{ .Title }}</h1>
+    <p class="jp-lead">{{ .Params.lead }}</p>
+
+    <div class="jp-actions">
+      <a class="btn btn-primary btn-lg" href="{{ "docs/ground-rules/" | relLangURL }}">
+        <span class="material-icons align-middle me-1">rule</span>{{ .Params.primaryCta }}
+      </a>
+      <a class="btn btn-outline-primary btn-lg" href="{{ "docs/access/" | relLangURL }}">
+        <span class="material-icons align-middle me-1">lock</span>{{ .Params.secondaryCta }}
+      </a>
+    </div>
+
+    <div class="jp-meta" aria-label="{{ .Params.metaLabel }}">
+      <div class="jp-meta-item">
+        <span class="jp-meta-label">{{ .Params.metaOneLabel }}</span>
+        <span class="jp-meta-value">{{ .Params.metaOneValue }}</span>
+      </div>
+      <div class="jp-meta-item">
+        <span class="jp-meta-label">{{ .Params.metaTwoLabel }}</span>
+        <span class="jp-meta-value">{{ .Params.metaTwoValue }}</span>
+      </div>
+      <div class="jp-meta-item">
+        <span class="jp-meta-label">{{ .Params.metaThreeLabel }}</span>
+        <span class="jp-meta-value">{{ .Params.metaThreeValue }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="jp-section">
+  <div class="container">
+    <h2 class="jp-section-title">{{ .Params.sectionTitle }}</h2>
+    <p class="jp-section-lead">{{ .Params.sectionLead }}</p>
+    <div class="jp-highlight-grid">
+      {{ range .Params.highlights }}
+        <article class="jp-highlight">
+          <i class="material-icons" aria-hidden="true">{{ .icon }}</i>
+          <h2>{{ .title }}</h2>
+          <p>{{ .text }}</p>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
