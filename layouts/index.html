@@ -1,15 +1,6 @@
 {{ define "main" }}
 <section class="jp-hero">
   <div class="container jp-hero-inner">
-    {{ if hugo.IsMultilingual }}
-      <nav class="jp-language-switch" aria-label="{{ i18n "lang_select_title" }}">
-        <span>{{ .Site.Language.Label }}</span>
-        {{ range .Translations }}
-          <a href="{{ .RelPermalink }}" rel="alternate" hreflang="{{ .Lang }}">{{ .Language.Label }}</a>
-        {{ end }}
-      </nav>
-    {{ end }}
-
     <p class="jp-eyebrow">{{ .Params.eyebrow }}</p>
     <h1 class="jp-title">{{ .Title }}</h1>
     <p class="jp-lead">{{ .Params.lead }}</p>

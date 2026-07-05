@@ -1,0 +1,62 @@
+<!-- Navbar Start -->
+<header id="topnav">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a class="logo" aria-label="Home" href='{{ relLangURL "" }}'>
+            <div class="small">
+                {{ with resources.Get "images/logos/mark.svg" }}
+                        {{ .Content | safeHTML }}
+                {{ end }}
+            </div>
+            <div class="big">
+                {{ with resources.Get "images/logos/logo.svg" }}
+                        {{ .Content | safeHTML }}
+                {{ end }}
+            </div>
+        </a>
+
+        <div class="d-flex align-items-center">
+            <div id="navigation">
+                <ul class="navigation-menu nav-right">
+                    {{- range .Site.Menus.primary }}
+                    <li><a href="{{ relLangURL .URL }}">{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+
+            {{ with $.Scratch.Get "social_list" }}
+            <ul class="social-link d-flex list-inline mb-0">
+                {{ range . }}
+                    {{ $path := printf "images/social/%s.%s" . "svg" }}
+                    <li class="list-inline-item mb-0">
+                        <a href="{{ if eq . `rss` }} {{ `index.xml` | absURL }} {{ else if eq . `bluesky` }} https://bsky.app/profile/{{ index site.Params.social . }} {{ else }} https://{{ . }}.com/{{ index site.Params.social . }} {{ end }}" alt="{{ . }}" rel="noopener noreferrer" target="_blank">
+                            <div class="btn btn-icon btn-landing border-0">
+                                {{ with resources.Get $path }}
+                                    {{ .Content | safeHTML }}
+                                {{ end }}
+                            </div>
+                        </a>
+                    </li>
+                {{ end }}
+            </ul>
+            {{ end }}
+
+            <div class="ms-2 d-flex align-items-center">
+                {{ partial "language-switch.html" . }}
+            </div>
+
+            <div class="menu-extras ms-3 me-2">
+                <div class="menu-item">
+                    <button class="navbar-toggle btn btn-icon btn-soft-light" id="isToggle" aria-label="toggleMenu" onclick="toggleMenu()">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+<!-- Navbar End -->

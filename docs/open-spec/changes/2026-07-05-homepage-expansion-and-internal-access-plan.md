@@ -40,6 +40,8 @@ Public visitors:
   public summary cadence.
 - See a tighter homepage information hierarchy with the public/private access
   block removed from the front page.
+- Can switch languages from the top-right area on any translated page and stay
+  on the corresponding page instead of being sent back to a language homepage.
 - Can still open a complete public ground-rules page.
 - See a more concise public ground-rules page without the prior closing
   "current principle" section.

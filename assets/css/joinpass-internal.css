@@ -21,6 +21,13 @@
   margin-bottom: 28px;
 }
 
+.jp-internal-controls {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 12px;
+}
+
 .jp-internal-heading {
   max-width: 720px;
 }
@@ -433,6 +440,10 @@
   .jp-internal-login {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .jp-internal-controls {
+    width: 100%;
   }
 
   .jp-account {

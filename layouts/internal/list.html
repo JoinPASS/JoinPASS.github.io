@@ -8,7 +8,10 @@
         <p>{{ .Params.lead }}</p>
       </div>
 
-      {{ partial "internal/account-menu.html" . }}
+      <div class="jp-internal-controls">
+        {{ partial "language-switch.html" . }}
+        {{ partial "internal/account-menu.html" . }}
+      </div>
     </div>
 
     <div class="jp-internal-alert" data-jp-alert hidden></div>

@@ -9,35 +9,6 @@
   max-width: 980px;
 }
 
-.jp-language-switch {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 32px;
-}
-
-.jp-language-switch span,
-.jp-language-switch a {
-  border: 1px solid #c9d7e3;
-  border-radius: 8px;
-  color: #25415b;
-  font-size: 0.92rem;
-  line-height: 1;
-  padding: 8px 11px;
-  text-decoration: none;
-}
-
-.jp-language-switch span {
-  background: #ffffff;
-  font-weight: 600;
-}
-
-.jp-language-switch a:hover {
-  background: #ffffff;
-  color: #006d77;
-}
-
 .jp-eyebrow {
   color: #006d77;
   font-size: 0.95rem;
@@ -243,6 +214,28 @@
   gap: 18px;
   grid-template-columns: 32px minmax(0, 1fr);
   padding: 22px 24px;
+}
+
+.jp-global-lang-button {
+  align-items: center;
+  border: 1px solid #d9e3e7;
+  border-radius: 8px;
+  color: #25415b;
+  display: inline-flex;
+  font-size: 0.92rem;
+  font-weight: 600;
+  gap: 6px;
+  line-height: 1;
+  min-height: 40px;
+  padding: 9px 12px;
+  text-decoration: none;
+}
+
+.jp-global-lang-button:hover,
+.jp-global-lang-button:focus {
+  background: #ffffff;
+  border-color: #006d77;
+  color: #006d77;
 }
 
 @media (max-width: 900px) {
