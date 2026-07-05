@@ -44,10 +44,21 @@ main() {
     export PATH="${HOME}/.local/hugo:${PATH}"
   fi
 
+  if [[ -f "package-lock.json" ]]; then
+    if ! command -v npm >/dev/null 2>&1; then
+      echo "npm is required because package-lock.json is present." >&2
+      exit 1
+    fi
+
+    echo "Installing pinned frontend dependencies..."
+    npm ci
+  fi
+
   echo "Tool versions:"
   command -v sass >/dev/null 2>&1 && echo "Dart Sass: $(sass --version)"
   command -v go >/dev/null 2>&1 && echo "Go: $(go version)"
   command -v hugo >/dev/null 2>&1 && echo "Hugo: $(hugo version)"
+  command -v npm >/dev/null 2>&1 && echo "npm: $(npm --version)"
 
   if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
     git config --global core.quotepath false

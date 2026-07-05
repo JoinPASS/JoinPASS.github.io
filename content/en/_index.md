@@ -13,7 +13,7 @@ metaTwoValue = "One talk per meeting: about 40 minutes of presentation, followed
 metaThreeLabel = "Public summary"
 metaThreeValue = "A short public summary about every six months to make the community's work visible."
 sectionTitle = "Initial operating principles"
-sectionLead = "This first website version carries the public information and basic group rules. Internal documents and private pages will later be controlled through Google Drive and Google account authentication."
+sectionLead = "This first website version carries public information and basic group rules. Internal documents remain in Google Drive, while internal webpage entry points are planned around Google account authentication and a Supabase whitelist."
 
 [[highlights]]
 icon = "groups"

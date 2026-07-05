@@ -25,9 +25,9 @@ toc = true
 
 這類文件不會直接放進公開網站 repository。
 
-## 未來私有網頁
+## 內部私有網頁
 
-未來若有內部非公開網頁，會採用 Google account 認證，並透過 Supabase 管理白名單與角色。
+內部非公開網頁會採用 Google account 認證，並透過 Supabase 管理白名單與角色。初版內部區會先提供 Calendar 與文件區的入口連結；實際 Calendar 與 Google Drive 的存取權限仍由 Google 端控管。
 
 初步角色分為：
 
@@ -38,4 +38,4 @@ toc = true
 
 ## 目前狀態
 
-此初版尚未實作 Google account 認證、Supabase 白名單或管理者介面。這些會在後續規格與實作階段處理。
+此初版正在建立 Google account 認證、Supabase 白名單與管理者介面。Calendar 與文件區目前僅作為內部成員登入後才能讀取的外部連結，未串接 Google Calendar 或 Google Drive API。

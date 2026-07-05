@@ -30,6 +30,10 @@
         {{- $homeStyle := . | minify | fingerprint "sha384" }}
         <link rel="stylesheet" href="{{ $homeStyle.RelPermalink }}" integrity="{{ $homeStyle.Data.Integrity }}">
     {{- end }}
+    {{- with resources.Get "css/joinpass-internal.css" }}
+        {{- $internalStyle := . | minify | fingerprint "sha384" }}
+        <link rel="stylesheet" href="{{ $internalStyle.RelPermalink }}" integrity="{{ $internalStyle.Data.Integrity }}">
+    {{- end }}
     {{ $js := resources.Get "js/bootstrap.js" }}
     {{ $sourceMap := cond hugo.IsProduction "" "inline" }}
     {{ $opts := dict "sourceMap" $sourceMap "minify" hugo.IsProduction "target" "es2018" }}
@@ -39,4 +43,3 @@
     {{ end }}
     <script src="{{ $js.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $js.Data.Integrity }}"{{ end -}} defer></script>
 </head>
-

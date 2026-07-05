@@ -1,0 +1,17 @@
+{{- $page := .Page -}}
+{{- $supabase := $page.Site.Params.supabase -}}
+{{- $config := dict
+  "page" .pageType
+  "lang" $page.Site.Language.Lang
+  "supabaseUrl" ($supabase.url | default "")
+  "supabasePublishableKey" ($supabase.publishableKey | default "")
+  "dashboardPath" ("internal/" | relLangURL)
+  "adminPath" ("internal/admin/" | relLangURL)
+-}}
+<script type="application/json" id="joinpass-internal-config">{{ $config | jsonify | safeJS }}</script>
+{{- $jsOptions := dict "target" "es2020" "minify" hugo.IsProduction -}}
+{{- $internal := resources.Get "js/joinpass-internal.js" | js.Build $jsOptions -}}
+{{- if hugo.IsProduction -}}
+  {{- $internal = $internal | fingerprint "sha384" -}}
+{{- end -}}
+<script type="module" src="{{ $internal.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $internal.Data.Integrity }}"{{ end }}></script>

@@ -1,0 +1,51 @@
+{{ define "main" }}
+<section class="jp-internal" data-jp-internal-page="dashboard">
+  <div class="container jp-internal-shell">
+    <div class="jp-internal-topbar">
+      <div class="jp-internal-heading">
+        <p class="jp-internal-eyebrow">{{ .Params.eyebrow }}</p>
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Params.lead }}</p>
+      </div>
+
+      {{ partial "internal/account-menu.html" . }}
+    </div>
+
+    <div class="jp-internal-alert" data-jp-alert hidden></div>
+
+    <section class="jp-internal-login" data-jp-login-panel>
+      <div>
+        <p class="jp-panel-label" data-jp-login-kicker></p>
+        <h2 data-jp-login-title></h2>
+        <p data-jp-login-copy></p>
+      </div>
+      <button class="btn btn-primary" type="button" data-jp-login>
+        <span class="material-icons" aria-hidden="true">login</span>
+        <span data-jp-login-label></span>
+      </button>
+    </section>
+
+    <section class="jp-internal-member" data-jp-member-panel hidden>
+      <div class="jp-section-heading">
+        <p class="jp-panel-label" data-jp-dashboard-kicker></p>
+        <h2 data-jp-dashboard-title></h2>
+      </div>
+
+      <div class="jp-resource-grid" data-jp-resource-grid>
+        <a class="jp-resource-link" href="#" target="_blank" rel="noopener noreferrer" data-jp-resource-card="calendar">
+          <span class="material-icons" aria-hidden="true">calendar_month</span>
+          <strong data-jp-resource-title></strong>
+          <span data-jp-resource-description></span>
+        </a>
+        <a class="jp-resource-link" href="#" target="_blank" rel="noopener noreferrer" data-jp-resource-card="drive">
+          <span class="material-icons" aria-hidden="true">folder</span>
+          <strong data-jp-resource-title></strong>
+          <span data-jp-resource-description></span>
+        </a>
+      </div>
+    </section>
+  </div>
+</section>
+
+{{ partial "internal/app-script.html" (dict "Page" . "pageType" "dashboard") }}
+{{ end }}

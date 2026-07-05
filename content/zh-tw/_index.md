@@ -13,7 +13,7 @@ metaTwoValue = "每次一場報告：約 40 分鐘簡報，接著 20 分鐘問�
 metaThreeLabel = "對外摘要"
 metaThreeValue = "約每六個月整理一次公開摘要，呈現社群工作方向。"
 sectionTitle = "初版運作原則"
-sectionLead = "這個網站先承載公開資訊與社群基本規則；內部文件與私有頁面會在後續階段分別透過 Google Drive 與 Google 帳號認證控管。"
+sectionLead = "這個網站先承載公開資訊與社群基本規則；內部文件會透過 Google Drive 控管，內部網頁入口則規劃以 Google 帳號認證與 Supabase 白名單控管。"
 
 [[highlights]]
 icon = "groups"

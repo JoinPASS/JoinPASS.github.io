@@ -57,6 +57,11 @@ Private web content must require:
 - Whitelist membership before access is granted.
 - Role separation between administrators and regular users.
 
+The initial internal web area should be a protected entry point rather than a
+full document or calendar system. Calendar and document entries may link out to
+Google Calendar and Google Drive. Those Google resources are controlled by
+Google-side permissions and are a separate security boundary from the website.
+
 ## Authorization Model
 
 The whitelist must distinguish at least:
@@ -67,6 +72,11 @@ The whitelist must distinguish at least:
 Authorization decisions must not rely on user-editable metadata. Durable role
 and whitelist state should live in Supabase tables protected by RLS policies or
 server-side checks.
+
+The current Supabase project URL is
+`https://lkdidspebzhqjlleyfep.supabase.co`. Browser code may use the Supabase
+publishable key, but service-role or secret keys must never be exposed to
+browser code or committed to the repository.
 
 ## Private Non-Web Documents
 

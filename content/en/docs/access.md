@@ -25,9 +25,9 @@ Private documents that are not webpages will remain in Google Drive, where acces
 
 These files should not be committed directly into the public website repository.
 
-## Future Private Webpages
+## Private Webpages
 
-Future private webpages will require Google account authentication and Supabase-backed whitelist authorization.
+Private webpages require Google account authentication and Supabase-backed whitelist authorization. The first internal area provides entry links for Calendar and Documents; actual Google Calendar and Google Drive access remains controlled on the Google side.
 
 The initial roles are:
 
@@ -38,4 +38,4 @@ Authorization decisions must be based on protected server-side or Supabase data,
 
 ## Current Status
 
-This first version does not yet implement Google account authentication, Supabase whitelist checks, or the administrator interface. Those will be handled in later specs and implementation phases.
+This first version is adding Google account authentication, Supabase whitelist checks, and the administrator interface. Calendar and Documents are currently protected external links only; the site does not integrate with the Google Calendar or Google Drive APIs.
