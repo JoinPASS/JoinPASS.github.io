@@ -18,8 +18,8 @@
       <a class="btn btn-primary btn-lg" href="{{ "docs/ground-rules/" | relLangURL }}">
         <span class="material-icons align-middle me-1">rule</span>{{ .Params.primaryCta }}
       </a>
-      <a class="btn btn-outline-primary btn-lg" href="{{ "docs/access/" | relLangURL }}">
-        <span class="material-icons align-middle me-1">lock</span>{{ .Params.secondaryCta }}
+      <a class="btn btn-outline-primary btn-lg" href="{{ "internal/" | relLangURL }}">
+        <span class="material-icons align-middle me-1">shield</span>{{ .Params.secondaryCta }}
       </a>
     </div>
 
@@ -50,6 +50,78 @@
           <i class="material-icons" aria-hidden="true">{{ .icon }}</i>
           <h2>{{ .title }}</h2>
           <p>{{ .text }}</p>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="jp-section jp-section-muted">
+  <div class="container">
+    <div class="jp-section-head">
+      <h2 class="jp-section-title">{{ .Params.principlesTitle }}</h2>
+      <p class="jp-section-lead">{{ .Params.principlesLead }}</p>
+    </div>
+    <div class="jp-principles-grid">
+      {{ range .Params.principles }}
+        <article class="jp-principle">
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="jp-section">
+  <div class="container">
+    <div class="jp-section-head">
+      <h2 class="jp-section-title">{{ .Params.operationsTitle }}</h2>
+      <p class="jp-section-lead">{{ .Params.operationsLead }}</p>
+    </div>
+    <div class="jp-operation-grid">
+      {{ range .Params.operationCards }}
+        <article class="jp-operation-card">
+          <span class="material-icons" aria-hidden="true">{{ .icon }}</span>
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="jp-section jp-section-split">
+  <div class="container">
+    <div class="jp-section-head">
+      <h2 class="jp-section-title">{{ .Params.sharingTitle }}</h2>
+      <p class="jp-section-lead">{{ .Params.sharingLead }}</p>
+    </div>
+    <div class="jp-sharing-grid">
+      {{ range .Params.sharingColumns }}
+        <article class="jp-sharing-column">
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="jp-section jp-section-muted">
+  <div class="container">
+    <div class="jp-section-head">
+      <h2 class="jp-section-title">{{ .Params.accessTitle }}</h2>
+      <p class="jp-section-lead">{{ .Params.accessLead }}</p>
+    </div>
+    <div class="jp-access-grid">
+      {{ range .Params.accessCards }}
+        <article class="jp-access-card">
+          <span class="material-icons" aria-hidden="true">{{ .icon }}</span>
+          <div>
+            <h3>{{ .title }}</h3>
+            <p>{{ .text }}</p>
+          </div>
         </article>
       {{ end }}
     </div>

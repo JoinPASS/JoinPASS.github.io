@@ -1,5 +1,6 @@
 .jp-hero {
-  background: #f6f8fa;
+  background:
+    linear-gradient(180deg, #f7fafc 0%, #f4f7fa 100%);
   border-bottom: 1px solid #dde6ee;
   padding: 80px 0 64px;
 }
@@ -110,6 +111,18 @@
   padding: 64px 0;
 }
 
+.jp-section-muted {
+  background: #f7f9fb;
+}
+
+.jp-section-head {
+  align-items: end;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  margin-bottom: 28px;
+}
+
 .jp-section-title {
   color: #16212b;
   font-size: 1.55rem;
@@ -134,6 +147,7 @@
   background: #ffffff;
   border: 1px solid #d8e2ea;
   border-radius: 8px;
+  box-shadow: 0 14px 34px rgba(22, 33, 43, 0.04);
   padding: 24px;
 }
 
@@ -156,9 +170,88 @@
   margin-bottom: 0;
 }
 
+.jp-principles-grid,
+.jp-operation-grid,
+.jp-access-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.jp-principles-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.jp-principle,
+.jp-operation-card,
+.jp-sharing-column,
+.jp-access-card {
+  background: #ffffff;
+  border: 1px solid #d8e2ea;
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(22, 33, 43, 0.04);
+}
+
+.jp-principle,
+.jp-operation-card,
+.jp-sharing-column {
+  padding: 24px;
+}
+
+.jp-principle h3,
+.jp-operation-card h3,
+.jp-sharing-column h3,
+.jp-access-card h3 {
+  color: #16212b;
+  font-size: 1.08rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.jp-principle p,
+.jp-operation-card p,
+.jp-sharing-column p,
+.jp-access-card p {
+  color: #526676;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.jp-operation-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.jp-operation-card .material-icons,
+.jp-access-card .material-icons {
+  color: #006d77;
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.jp-sharing-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.jp-access-grid {
+  grid-template-columns: 1fr;
+}
+
+.jp-access-card {
+  align-items: flex-start;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 32px minmax(0, 1fr);
+  padding: 22px 24px;
+}
+
 @media (max-width: 900px) {
   .jp-meta,
-  .jp-highlight-grid {
+  .jp-highlight-grid,
+  .jp-principles-grid,
+  .jp-operation-grid,
+  .jp-sharing-grid,
+  .jp-section-head {
     grid-template-columns: 1fr;
   }
 

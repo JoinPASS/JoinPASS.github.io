@@ -264,6 +264,39 @@
   gap: 20px;
 }
 
+.jp-internal-document {
+  background: #ffffff;
+  border: 1px solid #d9e3e7;
+  border-radius: 8px;
+  padding: 28px;
+}
+
+.jp-internal-prose {
+  color: #33424d;
+  line-height: 1.75;
+  max-width: 820px;
+}
+
+.jp-internal-prose > :first-child {
+  margin-top: 0;
+}
+
+.jp-internal-prose h2,
+.jp-internal-prose h3 {
+  color: #17212b;
+  font-weight: 700;
+  margin-top: 32px;
+}
+
+.jp-internal-prose p,
+.jp-internal-prose ul {
+  margin-bottom: 16px;
+}
+
+.jp-internal-prose li + li {
+  margin-top: 8px;
+}
+
 .jp-field {
   display: grid;
   gap: 8px;

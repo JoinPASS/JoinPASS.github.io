@@ -4,7 +4,7 @@ description = "PASS, a small invitation-only community focused on sovereign AI i
 eyebrow = "Academia Sinica · early draft"
 lead = "We are starting the Platform for AI Sovereignty Study, or PASS: a small, invitation-only professional community for people working on sovereign AI in Taiwan. The goal for now is simple: meet regularly, learn from each other's work, and build continuity across academia, industry, and government."
 primaryCta = "Read the ground rules"
-secondaryCta = "Review access plans"
+secondaryCta = "Open the internal area"
 metaLabel = "Study group operating summary"
 metaOneLabel = "Cadence"
 metaOneValue = "Three meetings per week over Google Meet."
@@ -13,7 +13,15 @@ metaTwoValue = "One talk per meeting: about 40 minutes of presentation, followed
 metaThreeLabel = "Public summary"
 metaThreeValue = "A short public summary about every six months to make the community's work visible."
 sectionTitle = "Initial operating principles"
-sectionLead = "This first website version carries public information and basic group rules. Internal documents remain in Google Drive, while internal webpage entry points are planned around Google account authentication and a Supabase whitelist."
+sectionLead = "The public homepage now explains how PASS works directly, while private files and private access details stay in the protected internal area."
+principlesTitle = "Community plan"
+principlesLead = "PASS is not meant to be a broad public forum. It is a small study group built around steady participation, long-term trust, and useful exchange among people doing substantive sovereign AI work in Taiwan."
+operationsTitle = "How the group operates"
+operationsLead = "The first version stays intentionally light, while still being explicit about cadence, participation, and sharing boundaries."
+sharingTitle = "Sharing and boundaries"
+sharingLead = "PASS is designed to let ideas move while protecting the room people need for candid thinking, unfinished work, and revision."
+accessTitle = "Public and internal"
+accessLead = "Public communication and internal resources are handled separately: the public side explains the group, while the internal side protects member access and ongoing operations."
 
 [[highlights]]
 icon = "groups"
@@ -29,4 +37,54 @@ text = "Each meeting centers on one talk. Over time, everyone takes a turn prese
 icon = "verified_user"
 title = "Protected discussion space"
 text = "Members may use what is discussed, but should not attribute specific views to specific people. The group is designed for candid thinking."
+
+[[principles]]
+title = "Focused on sovereign AI in Taiwan"
+text = "Members come from academia, industry, and government settings where sovereign AI is being researched, governed, or implemented in practice."
+
+[[principles]]
+title = "Build a durable rhythm first"
+text = "The immediate priority is to create a stable pattern of meeting and learning from one another, rather than introducing too much structure too early."
+
+[[principles]]
+title = "Leave room to evolve"
+text = "As the group grows, it can add the structure it truly needs. The initial design should support participation, not burden it."
+
+[[operationCards]]
+icon = "calendar_month"
+title = "Regular cadence"
+text = "Three Google Meet sessions each week create a consistent exchange rhythm without turning participation into an administrative burden."
+
+[[operationCards]]
+icon = "slideshow"
+title = "One deep talk per meeting"
+text = "Each session centers on one presentation of roughly 40 minutes, followed by about 20 minutes of questions and discussion."
+
+[[operationCards]]
+icon = "person_play"
+title = "Members take turns presenting"
+text = "Over time, members rotate through presentations. That is the clearest and most substantive participation commitment."
+
+[[sharingColumns]]
+title = "Sharing within PASS"
+text = "Ideas discussed in PASS may be used and built on freely by members, but particular views should not be attributed to particular people. That boundary makes it easier to think out loud."
+
+[[sharingColumns]]
+title = "Sharing outside the group"
+text = "About every six months, PASS will publish a short public summary of what the group has been paying attention to. The outside view should reveal direction, not expose day-to-day discussion."
+
+[[accessCards]]
+icon = "public"
+title = "Public homepage"
+text = "The homepage now carries the main narrative about PASS directly, so external readers do not need to navigate across multiple introductory documents."
+
+[[accessCards]]
+icon = "folder"
+title = "Private non-web documents"
+text = "Private documents remain in Google Drive, where access can be managed cleanly through Google accounts or Workspace permissions."
+
+[[accessCards]]
+icon = "shield_lock"
+title = "Private webpages"
+text = "Private pages use Google account authentication plus a Supabase whitelist, with a clear separation between administrator and member permissions."
 +++

@@ -307,6 +307,11 @@ async function refreshState() {
     return;
   }
 
+  if (config.page === "document") {
+    renderDocument();
+    return;
+  }
+
   await renderDashboard();
 }
 
@@ -381,7 +386,15 @@ function renderResource(resource) {
 async function renderAdmin() {
   showElement("[data-jp-login-panel]", false);
   showElement("[data-jp-admin-panel]", true);
+  showElement("[data-jp-document-panel]", false);
   await loadMembers();
+}
+
+function renderDocument() {
+  showElement("[data-jp-login-panel]", false);
+  showElement("[data-jp-member-panel]", false);
+  showElement("[data-jp-admin-panel]", false);
+  showElement("[data-jp-document-panel]", true);
 }
 
 async function loadMembers() {
@@ -547,6 +560,7 @@ function renderLoggedOut() {
   showElement("[data-jp-login-panel]", true);
   showElement("[data-jp-member-panel]", false);
   showElement("[data-jp-admin-panel]", false);
+  showElement("[data-jp-document-panel]", false);
   setAccount({
     label: labels.loginPrompt,
     name: labels.loginPrompt,
@@ -586,6 +600,7 @@ function renderUnauthorized() {
   showElement("[data-jp-login-panel]", false);
   showElement("[data-jp-member-panel]", false);
   showElement("[data-jp-admin-panel]", false);
+  showElement("[data-jp-document-panel]", false);
   showAlert(labels.notWhitelisted, "warning");
   setAccount({
     label: state.user.email || labels.accountFallback,
@@ -602,6 +617,7 @@ function renderForbidden() {
   showElement("[data-jp-login-panel]", false);
   showElement("[data-jp-member-panel]", false);
   showElement("[data-jp-admin-panel]", false);
+  showElement("[data-jp-document-panel]", false);
   showAlert(labels.forbidden, "warning");
 }
 

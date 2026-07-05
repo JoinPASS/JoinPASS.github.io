@@ -18,8 +18,10 @@ whitelist authorization.
   professional study group audience.
 - The initial public content is based on the uploaded one-page ground rules
   DOCX `PASS_Ground_Rules_1page.docx`.
-- The public information architecture should keep core study group rules in a
-  documentation-style section rather than a marketing-heavy landing page.
+- The public information architecture should use a professional, content-rich
+  homepage that presents the study group's positioning and operating model
+  directly, without relying on separate public rule documents for the main
+  narrative.
 
 ## Internationalization
 
@@ -42,11 +44,12 @@ The website must support internationalization from the beginning.
 The first website iteration should include:
 
 - A bilingual homepage introducing PASS / Platform for AI Sovereignty Study.
-- A bilingual ground rules page covering meeting cadence, presentation format,
-  member participation, internal sharing, and public summaries.
-- A bilingual access page explaining that private non-web documents will remain
-  in Google Drive and private web pages will later require Google account
-  authentication plus Supabase whitelist authorization.
+- A bilingual homepage that expands the core community-planning content,
+  including meeting cadence, presentation format, member participation,
+  internal sharing norms, and public summary rhythm.
+- A protected bilingual internal document page for access planning, covering
+  Google Drive document handling and Google account plus Supabase whitelist
+  access for private webpages.
 
 ## Private Website Area
 
@@ -57,9 +60,12 @@ Private web content must require:
 - Whitelist membership before access is granted.
 - Role separation between administrators and regular users.
 
-The initial internal web area should be a protected entry point rather than a
-full document or calendar system. Calendar and document entries may link out to
-Google Calendar and Google Drive. Those Google resources are controlled by
+The initial internal web area should be a protected entry point with a small
+set of protected pages rather than a full document or calendar system. Calendar
+and document entries may link out to Google Calendar and Google Drive. The
+internal area may also host low-sensitivity internal planning pages such as the
+access plan, but that plan should not be discoverable through public-facing
+navigation or visible public links. Those Google resources are controlled by
 Google-side permissions and are a separate security boundary from the website.
 
 ## Authorization Model
