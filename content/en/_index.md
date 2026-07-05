@@ -12,16 +12,14 @@ metaTwoLabel = "Format"
 metaTwoValue = "One talk per meeting: about 40 minutes of presentation, followed by 20 minutes of questions and discussion."
 metaThreeLabel = "Public summary"
 metaThreeValue = "A short public summary about every six months to make the community's work visible."
-sectionTitle = "Initial operating principles"
-sectionLead = "The public homepage now explains how PASS works directly, while private files and private access details stay in the protected internal area."
+sectionTitle = "Operating principles"
+sectionLead = ""
 principlesTitle = "Community plan"
 principlesLead = "PASS is not meant to be a broad public forum. It is a small study group built around steady participation, long-term trust, and useful exchange among people doing substantive sovereign AI work in Taiwan."
 operationsTitle = "How the group operates"
-operationsLead = "The first version stays intentionally light, while still being explicit about cadence, participation, and sharing boundaries."
+operationsLead = ""
 sharingTitle = "Sharing and boundaries"
 sharingLead = "PASS is designed to let ideas move while protecting the room people need for candid thinking, unfinished work, and revision."
-accessTitle = "Public and internal"
-accessLead = "Public communication and internal resources are handled separately: the public side explains the group, while the internal side protects member access and ongoing operations."
 
 [[highlights]]
 icon = "groups"
@@ -73,18 +71,4 @@ text = "Ideas discussed in PASS may be used and built on freely by members, but 
 title = "Sharing outside the group"
 text = "About every six months, PASS will publish a short public summary of what the group has been paying attention to. The outside view should reveal direction, not expose day-to-day discussion."
 
-[[accessCards]]
-icon = "public"
-title = "Public homepage"
-text = "The homepage now carries the main narrative about PASS directly, so external readers do not need to navigate across multiple introductory documents."
-
-[[accessCards]]
-icon = "folder"
-title = "Private non-web documents"
-text = "Private documents remain in Google Drive, where access can be managed cleanly through Google accounts or Workspace permissions."
-
-[[accessCards]]
-icon = "shield_lock"
-title = "Private webpages"
-text = "Private pages use Google account authentication plus a Supabase whitelist, with a clear separation between administrator and member permissions."
 +++

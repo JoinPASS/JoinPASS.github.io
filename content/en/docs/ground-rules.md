@@ -28,7 +28,3 @@ Whatever is presented and discussed is open for everyone in PASS to use freely, 
 About twice a year, roughly every six months, we will publish a short public summary of what the community has been working on.
 
 This keeps the work visible from the outside without exposing the day-to-day discussion.
-
-## Current Principle
-
-That is all for now. As the community grows, we will add whatever structure it actually needs, and no more.

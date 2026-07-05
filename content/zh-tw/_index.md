@@ -12,16 +12,14 @@ metaTwoLabel = "會議形式"
 metaTwoValue = "每次一場報告：約 40 分鐘簡報，接著 20 分鐘問答與討論。"
 metaThreeLabel = "對外摘要"
 metaThreeValue = "約每六個月整理一次公開摘要，呈現社群工作方向。"
-sectionTitle = "初版運作原則"
-sectionLead = "PASS 的公開首頁直接說明社群如何運作；非公開文件與私有入口則放到受保護的內部區。"
+sectionTitle = "運作原則"
+sectionLead = ""
 principlesTitle = "社群規劃"
-principlesLead = "這不是一個大型公開論壇，而是一個以穩定參與、長期互信與實質交流為核心的小型 study group。首頁直接展開目前的共識，讓新成員和外部合作夥伴能快速理解我們的工作方式。"
+principlesLead = "這不是一個大型公開論壇，而是一個以穩定參與、長期互信與實質交流為核心的小型 study group。"
 operationsTitle = "運作方式"
-operationsLead = "初版設計刻意保持輕量，但對節奏、參與與分享邊界有明確共識。"
+operationsLead = ""
 sharingTitle = "分享與邊界"
 sharingLead = "PASS 鼓勵內容流動，但保護成員能夠安心思考、試探與修正觀點的空間。"
-accessTitle = "公開與內部"
-accessLead = "公開資訊與內部資源分流管理：前者重視對外理解，後者重視成員權限與持續維運。"
 
 [[highlights]]
 icon = "groups"
@@ -73,18 +71,4 @@ text = "在 PASS 中提出的內容原則上可供成員自由吸收、引用與
 title = "對外分享節奏"
 text = "約每六個月整理一次簡短公開摘要，說明社群近期關注與推進方向。對外可見的是工作脈絡，不是日常討論逐字紀錄。"
 
-[[accessCards]]
-icon = "public"
-title = "公開首頁"
-text = "首頁集中呈現社群定位、運作原則與對外可說明內容，讓外部讀者不必再跳轉多份文件。"
-
-[[accessCards]]
-icon = "folder"
-title = "內部非網頁文件"
-text = "非公開文件持續放在 Google Drive，由 Google 帳號或 Workspace 權限控管，方便後續治理與交接。"
-
-[[accessCards]]
-icon = "shield_lock"
-title = "內部私有網頁"
-text = "私有頁面透過 Google account 認證與 Supabase 白名單管理；管理者與一般會員權限分離，維持清楚的存取責任。"
 +++

@@ -38,7 +38,11 @@ Public visitors:
 - Land on a bilingual homepage that already explains the community structure,
   meeting rhythm, participation expectations, internal sharing norms, and
   public summary cadence.
+- See a tighter homepage information hierarchy with the public/private access
+  block removed from the front page.
 - Can still open a complete public ground-rules page.
+- See a more concise public ground-rules page without the prior closing
+  "current principle" section.
 - Can understand the main study-group operating model directly from the
   homepage.
 

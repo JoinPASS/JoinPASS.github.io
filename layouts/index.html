@@ -43,7 +43,7 @@
 <section class="jp-section">
   <div class="container">
     <h2 class="jp-section-title">{{ .Params.sectionTitle }}</h2>
-    <p class="jp-section-lead">{{ .Params.sectionLead }}</p>
+    {{ with .Params.sectionLead }}<p class="jp-section-lead">{{ . }}</p>{{ end }}
     <div class="jp-highlight-grid">
       {{ range .Params.highlights }}
         <article class="jp-highlight">
@@ -77,7 +77,7 @@
   <div class="container">
     <div class="jp-section-head">
       <h2 class="jp-section-title">{{ .Params.operationsTitle }}</h2>
-      <p class="jp-section-lead">{{ .Params.operationsLead }}</p>
+      {{ with .Params.operationsLead }}<p class="jp-section-lead">{{ . }}</p>{{ end }}
     </div>
     <div class="jp-operation-grid">
       {{ range .Params.operationCards }}
@@ -108,23 +108,4 @@
   </div>
 </section>
 
-<section class="jp-section jp-section-muted">
-  <div class="container">
-    <div class="jp-section-head">
-      <h2 class="jp-section-title">{{ .Params.accessTitle }}</h2>
-      <p class="jp-section-lead">{{ .Params.accessLead }}</p>
-    </div>
-    <div class="jp-access-grid">
-      {{ range .Params.accessCards }}
-        <article class="jp-access-card">
-          <span class="material-icons" aria-hidden="true">{{ .icon }}</span>
-          <div>
-            <h3>{{ .title }}</h3>
-            <p>{{ .text }}</p>
-          </div>
-        </article>
-      {{ end }}
-    </div>
-  </div>
-</section>
 {{ end }}
