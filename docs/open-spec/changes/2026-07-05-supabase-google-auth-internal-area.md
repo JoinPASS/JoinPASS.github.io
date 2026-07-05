@@ -173,12 +173,23 @@ Supabase advisors after fixes:
 - Remaining performance INFO is Supabase Auth connection strategy, not a
   JoinPASS schema issue.
 
+Verified production deployment:
+
+- Pushed commit `5325760`.
+- Vercel deployment `dpl_4ELciREWf82M6kYbVKy9KZzBm4T6` reached `READY`.
+- `https://joinpass.vercel.app/zh-tw/internal/` returns `200`.
+- `https://joinpass.vercel.app/en/internal/admin/` returns `200`.
+- Production HTML includes a Supabase publishable key from Vercel environment
+  configuration.
+- Anonymous REST access to `joinpass_internal_resources` returns `401`, so
+  Calendar and Drive URLs are not readable through the Data API without a
+  signed-in, authorized member session.
+
 Browser visual verification with `agent-browser` was not completed because the
 `agent-browser` command and Playwright are not installed in this environment.
 
 External configuration still required before production login works:
 
-- Set Vercel `HUGO_PARAMS_SUPABASE_PUBLISHABLEKEY`.
 - Configure Supabase Google provider.
 - Configure Supabase redirect URLs.
 - Seed the first admin account.
