@@ -14,6 +14,8 @@ This change adds:
 - A cropped square mark derived from the supplied artwork.
 - A header-friendly wordmark layout that combines the cropped mark with
   cleaner text placement for website use.
+- A favicon set derived from the same cropped mark for browser tabs and
+  bookmarks.
 - Updated logo assets that propagate across the public site, docs area, and
   internal area through the existing shared logo references.
 
@@ -45,6 +47,7 @@ Deployment impact:
 - The header logo reflects the new supplied PASS artwork.
 - The docs sidebar and docs top header also reflect the new artwork.
 - The internal area inherits the updated logo through shared layout assets.
+- Browser tab and bookmark icons reflect the supplied artwork.
 - The new logo remains legible at small and medium navigation sizes.
 - Local Hugo build succeeds.
 

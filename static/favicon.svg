@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="PASS icon">
+  <defs>
+    <clipPath id="passFaviconClip">
+      <rect x="2" y="2" width="60" height="60" rx="14"/>
+    </clipPath>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#ffffff"/>
+  <image href="/images/logos/pass-mark.png" x="2" y="2" width="60" height="60" preserveAspectRatio="xMidYMid meet" clip-path="url(#passFaviconClip)"/>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="#dce7ed"/>
+</svg>
