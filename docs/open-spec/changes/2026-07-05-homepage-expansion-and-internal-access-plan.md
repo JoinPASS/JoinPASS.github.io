@@ -45,6 +45,8 @@ Public visitors:
 - Can still open a complete public ground-rules page.
 - See a more concise public ground-rules page without the prior closing
   "current principle" section.
+- See the ground-rules page without the earlier introductory framing
+  paragraphs.
 - Can understand the main study-group operating model directly from the
   homepage.
 

@@ -47,23 +47,6 @@
   </div>
 </section>
 
-<section class="jp-section jp-section-muted">
-  <div class="container">
-    <div class="jp-section-head">
-      <h2 class="jp-section-title">{{ .Params.principlesTitle }}</h2>
-      <p class="jp-section-lead">{{ .Params.principlesLead }}</p>
-    </div>
-    <div class="jp-principles-grid">
-      {{ range .Params.principles }}
-        <article class="jp-principle">
-          <h3>{{ .title }}</h3>
-          <p>{{ .text }}</p>
-        </article>
-      {{ end }}
-    </div>
-  </div>
-</section>
-
 <section class="jp-section">
   <div class="container">
     <div class="jp-section-head">
@@ -86,7 +69,7 @@
   <div class="container">
     <div class="jp-section-head">
       <h2 class="jp-section-title">{{ .Params.sharingTitle }}</h2>
-      <p class="jp-section-lead">{{ .Params.sharingLead }}</p>
+      {{ with .Params.sharingLead }}<p class="jp-section-lead">{{ . }}</p>{{ end }}
     </div>
     <div class="jp-sharing-grid">
       {{ range .Params.sharingColumns }}

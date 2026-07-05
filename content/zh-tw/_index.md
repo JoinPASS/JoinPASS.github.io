@@ -14,12 +14,10 @@ metaThreeLabel = "對外摘要"
 metaThreeValue = "約每六個月整理一次公開摘要，呈現社群工作方向。"
 sectionTitle = "運作原則"
 sectionLead = ""
-principlesTitle = "社群規劃"
-principlesLead = "這不是一個大型公開論壇，而是一個以穩定參與、長期互信與實質交流為核心的小型 study group。"
 operationsTitle = "運作方式"
 operationsLead = ""
 sharingTitle = "分享與邊界"
-sharingLead = "PASS 鼓勵內容流動，但保護成員能夠安心思考、試探與修正觀點的空間。"
+sharingLead = ""
 
 [[highlights]]
 icon = "groups"
@@ -35,18 +33,6 @@ text = "每次會議以一場報告為主，成員會隨時間輪流簡報，這
 icon = "verified_user"
 title = "保護討論空間"
 text = "社群鼓勵自由使用討論成果，但不把特定觀點歸因給特定個人，讓大家能安心思考與試探。"
-
-[[principles]]
-title = "聚焦台灣主權 AI"
-text = "社群成員來自學研、產業與政府等實際推動現場，討論以台灣主權 AI 的研究、治理與落地經驗為主。"
-
-[[principles]]
-title = "先建立可持續互動"
-text = "現階段最重要的是把穩定節奏建立起來，持續理解彼此正在做什麼，而不是一次塞入過多制度。"
-
-[[principles]]
-title = "保留後續演化空間"
-text = "等社群真的長到需要更多結構時，再補上必要規則，避免一開始就用過重流程影響參與品質。"
 
 [[operationCards]]
 icon = "calendar_month"

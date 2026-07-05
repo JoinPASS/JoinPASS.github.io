@@ -14,12 +14,10 @@ metaThreeLabel = "Public summary"
 metaThreeValue = "A short public summary about every six months to make the community's work visible."
 sectionTitle = "Operating principles"
 sectionLead = ""
-principlesTitle = "Community plan"
-principlesLead = "PASS is not meant to be a broad public forum. It is a small study group built around steady participation, long-term trust, and useful exchange among people doing substantive sovereign AI work in Taiwan."
 operationsTitle = "How the group operates"
 operationsLead = ""
 sharingTitle = "Sharing and boundaries"
-sharingLead = "PASS is designed to let ideas move while protecting the room people need for candid thinking, unfinished work, and revision."
+sharingLead = ""
 
 [[highlights]]
 icon = "groups"
@@ -35,18 +33,6 @@ text = "Each meeting centers on one talk. Over time, everyone takes a turn prese
 icon = "verified_user"
 title = "Protected discussion space"
 text = "Members may use what is discussed, but should not attribute specific views to specific people. The group is designed for candid thinking."
-
-[[principles]]
-title = "Focused on sovereign AI in Taiwan"
-text = "Members come from academia, industry, and government settings where sovereign AI is being researched, governed, or implemented in practice."
-
-[[principles]]
-title = "Build a durable rhythm first"
-text = "The immediate priority is to create a stable pattern of meeting and learning from one another, rather than introducing too much structure too early."
-
-[[principles]]
-title = "Leave room to evolve"
-text = "As the group grows, it can add the structure it truly needs. The initial design should support participation, not burden it."
 
 [[operationCards]]
 icon = "calendar_month"
