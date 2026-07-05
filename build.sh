@@ -38,9 +38,9 @@ main() {
 
   if ! command -v hugo >/dev/null 2>&1; then
     echo "Installing Hugo ${HUGO_VERSION}..."
-    curl -sfL --output-dir "${build_temp_dir}" -O "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux-amd64.tar.gz"
+    curl -sfL --output-dir "${build_temp_dir}" -O "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
     mkdir -p "${HOME}/.local/hugo"
-    tar -C "${HOME}/.local/hugo" -xf "${build_temp_dir}/hugo_${HUGO_VERSION}_linux-amd64.tar.gz"
+    tar -C "${HOME}/.local/hugo" -xf "${build_temp_dir}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
     export PATH="${HOME}/.local/hugo:${PATH}"
   fi
 
@@ -63,4 +63,3 @@ main() {
 }
 
 main "$@"
-
