@@ -153,7 +153,12 @@ or archiving the now-unused external Vercel and Supabase projects is an
 external administrative cleanup and is not performed by this repository
 change.
 
-Maintenance follow-up: the first two successful deployments reported that
-some official action versions still targeted the deprecated Node.js 20 action
-runtime. The workflow will be updated to the current official major versions
-and redeployed to clear this annotation.
+Maintenance verification:
+
+- The first two successful deployments reported that some official action
+  versions still targeted the deprecated Node.js 20 action runtime.
+- Updated Checkout to `actions/checkout@v7`, Configure Pages to
+  `actions/configure-pages@v6`, and Upload Pages Artifact to
+  `actions/upload-pages-artifact@v5`.
+- GitHub Actions run `29677868335` completed the build and deployment jobs
+  successfully without the Node.js runtime deprecation annotation.
