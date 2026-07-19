@@ -13,6 +13,8 @@ This change will:
 
 - Keep Hugo and Lotus Docs as the static-site build toolchain.
 - Build and deploy the site with GitHub Actions and GitHub Pages.
+- Use current official Pages workflow action major versions that run on the
+  supported GitHub Actions Node.js runtime without deprecation warnings.
 - Remove the Supabase authentication, whitelist, admin, and internal-resource
   implementation.
 - Remove all generated internal routes and internal navigation.
@@ -79,6 +81,8 @@ Deployment:
   architecture and states that the site contains public information only.
 - A GitHub Actions workflow builds Hugo and deploys `public/` with official
   GitHub Pages actions.
+- The workflow uses Node.js 24-compatible official action major versions and
+  completes without Node.js runtime deprecation annotations.
 - The Hugo build succeeds with the deployment base URL
   `https://cclljj.github.io/JoinPASS/`.
 - Traditional Chinese and English homepages and ground-rules pages are built
@@ -148,3 +152,8 @@ The repository and public website no longer use Vercel or Supabase. Deleting
 or archiving the now-unused external Vercel and Supabase projects is an
 external administrative cleanup and is not performed by this repository
 change.
+
+Maintenance follow-up: the first two successful deployments reported that
+some official action versions still targeted the deprecated Node.js 20 action
+runtime. The workflow will be updated to the current official major versions
+and redeployed to clear this annotation.
