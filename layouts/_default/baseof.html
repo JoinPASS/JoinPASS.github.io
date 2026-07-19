@@ -1,18 +1,11 @@
 <!DOCTYPE html>
-{{ $.Scratch.Delete "social_list" }}
-{{ $socialParams := slice "github" "twitter" "bluesky" "instagram" "rss" }}
-{{ range $socialParams }}
-    {{ if isset site.Params.social . }}
-        {{ $.Scratch.Add "social_list" (slice .) }}
-    {{ end }}
-{{ end }}
 <html lang="{{ site.Language.Locale }}" dir="{{ site.Language.Direction | default "ltr" }}">
     {{- partial "head.html" . -}}
     <body>
         <div>
             {{- partial "header.html" . -}}
         </div>
-        <div class="mb-4" id="content">
+        <div id="content">
             {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}
@@ -27,4 +20,3 @@
         {{- end }}
     </body>
 </html>
-

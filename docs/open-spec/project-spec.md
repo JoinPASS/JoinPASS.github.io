@@ -72,9 +72,21 @@ public permanently.
 
 The site includes:
 
-- A bilingual homepage introducing PASS and its approved operating model.
-- A bilingual public ground-rules page.
-- Future bilingual public summaries or resources only after explicit approval.
+- One Traditional Chinese landing page at `/zh-tw/` and one corresponding
+  English landing page at `/en/`.
+- A single-page narrative covering PASS positioning, operating format,
+  participation, sharing boundaries, and the public-summary rhythm without
+  repeating the same facts in multiple sections.
+- Same-page anchored navigation for the main content sections.
+- Future public summaries only after explicit approval and integration into a
+  deliberate public information architecture.
+
+The visual experience must remain professional and coherent throughout the
+full scroll. It should use restrained institutional color, strong typography,
+clear section hierarchy, varied but consistent layouts, generous whitespace,
+responsive behavior, visible keyboard focus, and reduced-motion support. It
+must avoid repetitive card grids, decorative excess, and marketing-heavy
+presentation.
 
 There is no internal website area. Private communication and resource sharing
 take place by email outside the website. A public contact address may be added

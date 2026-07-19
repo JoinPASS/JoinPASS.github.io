@@ -2,9 +2,9 @@
 
 Public website source for PASS, the Platform for AI Sovereignty Study.
 
-The site is built with Hugo and Lotus Docs, supports Traditional Chinese and
-English, and is deployed as a public-only static site with GitHub Actions and
-GitHub Pages.
+The site is built with Hugo and Lotus Docs, presents one focused public landing
+page in Traditional Chinese and one in English, and is deployed as a
+public-only static site with GitHub Actions and GitHub Pages.
 
 Everything in this repository and in the generated site must be safe to make
 public. Member information, meeting access details, documents, and private

@@ -1,82 +1,104 @@
 {{ define "main" }}
-<section class="jp-hero">
-  <div class="container jp-hero-inner">
-    <p class="jp-eyebrow">{{ .Params.eyebrow }}</p>
-    <h1 class="jp-title">{{ .Title }}</h1>
-    <p class="jp-lead">{{ .Params.lead }}</p>
-
-    <div class="jp-actions">
-      <a class="btn btn-primary btn-lg" href="{{ "docs/ground-rules/" | relLangURL }}">
-        <span class="material-icons align-middle me-1">rule</span>{{ .Params.primaryCta }}
-      </a>
-    </div>
-
-    <div class="jp-meta" aria-label="{{ .Params.metaLabel }}">
-      <div class="jp-meta-item">
-        <span class="jp-meta-label">{{ .Params.metaOneLabel }}</span>
-        <span class="jp-meta-value">{{ .Params.metaOneValue }}</span>
+<main class="jp-page">
+  <section class="jp-hero" aria-labelledby="hero-title">
+    <div class="container jp-hero-grid">
+      <div class="jp-hero-copy">
+        <p class="jp-kicker">{{ .Params.eyebrow }}</p>
+        <h1 id="hero-title" class="jp-title">{{ .Title }}</h1>
+        <p class="jp-lead">{{ .Params.lead }}</p>
+        <a class="jp-primary-link" href="#format">
+          <span>{{ .Params.primaryCta }}</span>
+          <span aria-hidden="true">↘</span>
+        </a>
       </div>
-      <div class="jp-meta-item">
-        <span class="jp-meta-label">{{ .Params.metaTwoLabel }}</span>
-        <span class="jp-meta-value">{{ .Params.metaTwoValue }}</span>
-      </div>
-      <div class="jp-meta-item">
-        <span class="jp-meta-label">{{ .Params.metaThreeLabel }}</span>
-        <span class="jp-meta-value">{{ .Params.metaThreeValue }}</span>
+
+      <div class="jp-hero-signal" aria-hidden="true">
+        <div class="jp-signal-orbit jp-signal-orbit-one"></div>
+        <div class="jp-signal-orbit jp-signal-orbit-two"></div>
+        <div class="jp-signal-axis"></div>
+        <div class="jp-signal-word">{{ .Params.heroMark }}</div>
+        <p>{{ .Params.heroNote }}</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="jp-section">
-  <div class="container">
-    <h2 class="jp-section-title">{{ .Params.sectionTitle }}</h2>
-    {{ with .Params.sectionLead }}<p class="jp-section-lead">{{ . }}</p>{{ end }}
-    <div class="jp-highlight-grid">
-      {{ range .Params.highlights }}
-        <article class="jp-highlight">
-          <i class="material-icons" aria-hidden="true">{{ .icon }}</i>
-          <h2>{{ .title }}</h2>
-          <p>{{ .text }}</p>
-        </article>
-      {{ end }}
-    </div>
-  </div>
-</section>
+  <section class="jp-section jp-purpose" id="purpose" aria-labelledby="purpose-title">
+    <div class="container">
+      <div class="jp-section-intro jp-section-intro-editorial">
+        <p class="jp-section-kicker">{{ .Params.purposeEyebrow }}</p>
+        <h2 id="purpose-title">{{ .Params.purposeTitle }}</h2>
+        <p>{{ .Params.purposeLead }}</p>
+      </div>
 
-<section class="jp-section">
-  <div class="container">
-    <div class="jp-section-head">
-      <h2 class="jp-section-title">{{ .Params.operationsTitle }}</h2>
-      {{ with .Params.operationsLead }}<p class="jp-section-lead">{{ . }}</p>{{ end }}
+      <div class="jp-audience-block">
+        <p class="jp-audience-label">{{ .Params.audiencesLabel }}</p>
+        <div class="jp-audience-grid">
+          {{ range .Params.audiences }}
+            <article class="jp-audience-item">
+              <span class="jp-audience-code" aria-hidden="true">{{ .number }}</span>
+              <div>
+                <h3>{{ .title }}</h3>
+                <p>{{ .text }}</p>
+              </div>
+            </article>
+          {{ end }}
+        </div>
+      </div>
     </div>
-    <div class="jp-operation-grid">
-      {{ range .Params.operationCards }}
-        <article class="jp-operation-card">
-          <span class="material-icons" aria-hidden="true">{{ .icon }}</span>
-          <h3>{{ .title }}</h3>
-          <p>{{ .text }}</p>
-        </article>
-      {{ end }}
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="jp-section jp-section-split">
-  <div class="container">
-    <div class="jp-section-head">
-      <h2 class="jp-section-title">{{ .Params.sharingTitle }}</h2>
-      {{ with .Params.sharingLead }}<p class="jp-section-lead">{{ . }}</p>{{ end }}
-    </div>
-    <div class="jp-sharing-grid">
-      {{ range .Params.sharingColumns }}
-        <article class="jp-sharing-column">
-          <h3>{{ .title }}</h3>
-          <p>{{ .text }}</p>
-        </article>
-      {{ end }}
-    </div>
-  </div>
-</section>
+  <section class="jp-section jp-format" id="format" aria-labelledby="format-title">
+    <div class="container">
+      <div class="jp-section-intro">
+        <p class="jp-section-kicker">{{ .Params.formatEyebrow }}</p>
+        <div>
+          <h2 id="format-title">{{ .Params.formatTitle }}</h2>
+          <p>{{ .Params.formatLead }}</p>
+        </div>
+      </div>
 
+      <div class="jp-format-list">
+        {{ range .Params.formatSteps }}
+          <article class="jp-format-row">
+            <span class="jp-format-number">{{ .number }}</span>
+            <p class="jp-format-metric">{{ .metric }}</p>
+            <div class="jp-format-copy">
+              <h3>{{ .title }}</h3>
+              <p>{{ .text }}</p>
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="jp-section jp-principles" id="principles" aria-labelledby="principles-title">
+    <div class="container">
+      <div class="jp-section-intro jp-section-intro-dark">
+        <p class="jp-section-kicker">{{ .Params.principlesEyebrow }}</p>
+        <div>
+          <h2 id="principles-title">{{ .Params.principlesTitle }}</h2>
+          <p>{{ .Params.principlesLead }}</p>
+        </div>
+      </div>
+
+      <div class="jp-principle-list">
+        {{ range .Params.principles }}
+          <article class="jp-principle-row">
+            <span>{{ .number }}</span>
+            <h3>{{ .title }}</h3>
+            <p>{{ .text }}</p>
+          </article>
+        {{ end }}
+      </div>
+
+      <aside class="jp-summary" aria-labelledby="summary-title">
+        <p>{{ .Params.summaryEyebrow }}</p>
+        <h2 id="summary-title">{{ .Params.summaryTitle }}</h2>
+        <div class="jp-summary-mark" aria-hidden="true">≈ 6M</div>
+        <p class="jp-summary-copy">{{ .Params.summaryText }}</p>
+      </aside>
+    </div>
+  </section>
+</main>
 {{ end }}

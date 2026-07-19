@@ -5,6 +5,7 @@ defaultContentLanguageInSubdir = true
 enableEmoji = true
 enableRobotsTXT = true
 timeZone = "Asia/Taipei"
+disableKinds = ["taxonomy", "term", "RSS"]
 
 [module]
   [module.hugoVersion]
@@ -46,38 +47,6 @@ timeZone = "Asia/Taipei"
   [params.footer]
     copyright = "© :YEAR: Platform for AI Sovereignty Study."
 
-  [params.social]
-    github = "cclljj/JoinPASS"
-
-  [params.docs]
-    title = "Platform for AI Sovereignty Study"
-    pathName = "docs"
-    themeColor = "cyan"
-    darkMode = true
-    prism = false
-    sidebarIcons = true
-    titleIcon = true
-    breadcrumbs = true
-    backToTop = true
-    toc = true
-    tocMobile = true
-    scrollSpy = true
-    descriptions = true
-    navDesc = true
-    navDescTrunc = 48
-    listDescTrunc = 120
-    intLinkTooltip = false
-    repoURL = "https://github.com/cclljj/JoinPASS"
-    repoBranch = "main"
-    editPage = false
-    lastMod = false
-
-  [params.flexsearch]
-    enabled = true
-    tokenize = "forward"
-    minQueryChar = 0
-    maxResult = 6
-
 [languages]
   [languages.zh-tw]
     title = "AI 主權研究平台"
@@ -88,10 +57,20 @@ timeZone = "Asia/Taipei"
     [languages.zh-tw.params]
       description = "PASS，一個聚焦台灣 AI 主權與主權 AI 的專業 study group。"
     [[languages.zh-tw.menu.primary]]
-      name = "公開文件"
-      url = "docs/"
-      identifier = "docs"
+      name = "定位"
+      url = "#purpose"
+      identifier = "purpose"
       weight = 10
+    [[languages.zh-tw.menu.primary]]
+      name = "運作方式"
+      url = "#format"
+      identifier = "format"
+      weight = 20
+    [[languages.zh-tw.menu.primary]]
+      name = "分享原則"
+      url = "#principles"
+      identifier = "principles"
+      weight = 30
 
   [languages.en]
     title = "Platform for AI Sovereignty Study"
@@ -102,7 +81,17 @@ timeZone = "Asia/Taipei"
     [languages.en.params]
       description = "PASS, a professional study group focused on AI sovereignty and sovereign AI in Taiwan."
     [[languages.en.menu.primary]]
-      name = "Docs"
-      url = "docs/"
-      identifier = "docs"
+      name = "Purpose"
+      url = "#purpose"
+      identifier = "purpose"
       weight = 10
+    [[languages.en.menu.primary]]
+      name = "Format"
+      url = "#format"
+      identifier = "format"
+      weight = 20
+    [[languages.en.menu.primary]]
+      name = "Principles"
+      url = "#principles"
+      identifier = "principles"
+      weight = 30

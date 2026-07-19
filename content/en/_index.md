@@ -1,59 +1,73 @@
 +++
 title = "Platform for AI Sovereignty Study"
-description = "PASS, a small invitation-only community focused on sovereign AI in Taiwan."
-eyebrow = "Academia Sinica · early draft"
-lead = "We are starting the Platform for AI Sovereignty Study, or PASS: a small, invitation-only professional community for people working on sovereign AI in Taiwan. The goal for now is simple: meet regularly, learn from each other's work, and build continuity across academia, industry, and government."
-primaryCta = "Read the ground rules"
-metaLabel = "Study group operating summary"
-metaOneLabel = "Cadence"
-metaOneValue = "Three meetings per week over Google Meet."
-metaTwoLabel = "Format"
-metaTwoValue = "One talk per meeting: about 40 minutes of presentation, followed by 20 minutes of questions and discussion."
-metaThreeLabel = "Public summary"
-metaThreeValue = "A short public summary about every six months to make the community's work visible."
-sectionTitle = "Operating principles"
-sectionLead = ""
-operationsTitle = "How the group operates"
-operationsLead = ""
-sharingTitle = "Sharing and boundaries"
-sharingLead = ""
+description = "PASS, a small invitation-only professional community focused on sovereign AI in Taiwan."
+eyebrow = "Academia Sinica · Platform for AI Sovereignty Study"
+lead = "A small, invitation-only professional community connecting researchers and practitioners working on sovereign AI in Taiwan—and building continuity across academia, industry, and government."
+primaryCta = "See how PASS works"
+heroNote = "Research · Practice · Public dialogue"
+heroMark = "PASS"
+heroMarkLabel = "Platform for AI Sovereignty Study"
 
-[[highlights]]
-icon = "groups"
-title = "PASS invitation-only community"
-text = "Members are connected by substantive work on sovereign AI in Taiwan, with long-term trust and practical exchange as the priority."
+purposeEyebrow = "01 · Purpose"
+purposeTitle = "Intentionally small, so the exchange can stay substantive."
+purposeLead = "PASS is not designed around scale. It gives people working on sovereign AI a regular way to understand one another's work. Sustained conversation turns cross-sector exchange from a one-off event into shared context."
+audiencesLabel = "Connecting three fields of practice"
 
-[[highlights]]
-icon = "co_present"
+formatEyebrow = "02 · Format"
+formatTitle = "Regular, focused, and built around real participation."
+formatLead = "A simple, dependable rhythm keeps the group's attention on the work itself."
+
+principlesEyebrow = "03 · Sharing principles"
+principlesTitle = "Ideas can move freely while the boundaries stay clear."
+principlesLead = "PASS members may absorb, use, and build on what is discussed. That freedom depends on non-attribution and careful handling of restricted information."
+
+summaryEyebrow = "Public sharing"
+summaryTitle = "A public summary about every six months."
+summaryText = "The summary presents what the community has been paying attention to and advancing—not a transcript of day-to-day discussion."
+
+footerStatement = "A professional study group focused on AI sovereignty and sovereign AI in Taiwan."
+footerBoundary = "This website contains public information only; non-public material is shared individually by email."
+
+[[audiences]]
+number = "A"
+title = "Academia"
+text = "Understanding research directions, methods, and long-term questions."
+
+[[audiences]]
+number = "I"
+title = "Industry"
+text = "Connecting implementation experience, technical constraints, and real needs."
+
+[[audiences]]
+number = "G"
+title = "Government"
+text = "Sustaining dialogue around public governance and institutions."
+
+[[formatSteps]]
+number = "01"
+metric = "3× / week"
+title = "A regular meeting cadence"
+text = "Three Google Meet sessions each week build continuity without turning the community into an administrative burden."
+
+[[formatSteps]]
+number = "02"
+metric = "40 + 20 min"
+title = "One deep talk"
+text = "Each session gives one topic full attention: roughly 40 minutes of presentation, followed by about 20 minutes of questions and discussion."
+
+[[formatSteps]]
+number = "03"
+metric = "Members rotate"
 title = "Members take turns presenting"
-text = "Each meeting centers on one talk. Over time, everyone takes a turn presenting; that is the main participation commitment."
+text = "Everyone presents over time. This is the clearest and most substantive participation commitment that comes with joining PASS."
 
-[[highlights]]
-icon = "verified_user"
-title = "Protected discussion space"
-text = "Members may use what is discussed, but should not attribute specific views to specific people. The group is designed for candid thinking."
+[[principles]]
+number = "01"
+title = "Use ideas freely; do not attribute them"
+text = "Members may share and build on ideas from the discussion, but not pass along who said what. This gives unfinished thinking room to be expressed candidly."
 
-[[operationCards]]
-icon = "calendar_month"
-title = "Regular cadence"
-text = "Three Google Meet sessions each week create a consistent exchange rhythm without turning participation into an administrative burden."
-
-[[operationCards]]
-icon = "slideshow"
-title = "One deep talk per meeting"
-text = "Each session centers on one presentation of roughly 40 minutes, followed by about 20 minutes of questions and discussion."
-
-[[operationCards]]
-icon = "person_play"
-title = "Members take turns presenting"
-text = "Over time, members rotate through presentations. That is the clearest and most substantive participation commitment."
-
-[[sharingColumns]]
-title = "Sharing within PASS"
-text = "Ideas discussed in PASS may be used and built on freely by members, but particular views should not be attributed to particular people. That boundary makes it easier to think out loud."
-
-[[sharingColumns]]
-title = "Sharing outside the group"
-text = "About every six months, PASS will publish a short public summary of what the group has been paying attention to. The outside view should reveal direction, not expose day-to-day discussion."
-
+[[principles]]
+number = "02"
+title = "Restricted material stays out of slides"
+text = "Trade secrets, patent-sensitive work, and anything else that cannot be shared should not appear in slides. When appropriate, raise it carefully in discussion instead."
 +++
