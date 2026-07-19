@@ -2,7 +2,7 @@
 
 ## Status
 
-Implemented; pending GitHub Pages deployment verification
+Accepted
 
 ## Scope
 
@@ -46,7 +46,11 @@ Local verification completed on 2026-07-19:
 - Approved Academia Sinica and Google Meet public facts remain present in both
   generated language pages.
 
-Pending verification after push:
+Deployment verification completed on 2026-07-19:
 
-- Successful GitHub Actions deployment.
-- Production HTML check for the revised and superseded phrases.
+- Commit `fc70c62` deployed successfully in GitHub Actions run
+  `29678612528`.
+- Both production language pages return HTTP 200 and contain their revised
+  formal positioning statement.
+- Neither production language page contains the superseded scale-oriented
+  positioning phrases.
