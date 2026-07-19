@@ -2,7 +2,7 @@
 
 ## Status
 
-Implemented locally; pending repository and production deployment verification
+Accepted
 
 ## Scope
 
@@ -79,8 +79,22 @@ Local verification completed on 2026-07-19:
 - Generated-output privacy scans found no email-shaped value, private route,
   or removed-service reference.
 
-Pending verification:
+Repository and deployment verification completed on 2026-07-19:
 
-- Push the complete `master` branch history to the target repository.
-- Set the target default branch and enable GitHub Pages with GitHub Actions.
-- Verify the target workflow and production organization site.
+- Commit `605f1d7` and all 23 commits reachable from `master` were pushed to
+  `JoinPASS/JoinPASS.github.io`; the local and remote branch heads match.
+- The target is public, non-empty, uses `master` as its default branch, and
+  identifies `https://joinpass.github.io/` as its homepage.
+- GitHub Pages uses the workflow build type with HTTPS enforcement enabled.
+- GitHub Actions run `29678958655` completed both build and deployment jobs
+  successfully.
+- The production root, `/zh-tw/`, `/en/`, and a generated stylesheet return
+  HTTP 200.
+- Both production language pages contain complete localized content, visible
+  reciprocal language navigation, and root-relative site URLs without the old
+  `/JoinPASS/` prefix.
+- Production privacy checks found no email-shaped value, private route, or
+  removed-service reference.
+- The local `origin` now points to the organization repository. The former
+  personal repository remains unchanged and is retained locally as
+  `legacy-origin`.
