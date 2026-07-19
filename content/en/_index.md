@@ -1,16 +1,16 @@
 +++
 title = "Platform for AI Sovereignty Study"
-description = "PASS, a small invitation-only professional community focused on sovereign AI in Taiwan."
+description = "PASS, an invitation-only professional community focused on sovereign AI in Taiwan."
 eyebrow = "Academia Sinica · Platform for AI Sovereignty Study"
-lead = "A small, invitation-only professional community connecting researchers and practitioners working on sovereign AI in Taiwan—and building continuity across academia, industry, and government."
+lead = "An invitation-only professional community connecting researchers and practitioners working on sovereign AI in Taiwan, with sustained exchange across academia, industry, and government."
 primaryCta = "See how PASS works"
 heroNote = "Research · Practice · Public dialogue"
 heroMark = "PASS"
 heroMarkLabel = "Platform for AI Sovereignty Study"
 
 purposeEyebrow = "01 · Purpose"
-purposeTitle = "Intentionally small, so the exchange can stay substantive."
-purposeLead = "PASS is not designed around scale. It gives people working on sovereign AI a regular way to understand one another's work. Sustained conversation turns cross-sector exchange from a one-off event into shared context."
+purposeTitle = "Sustained professional exchange across disciplines."
+purposeLead = "PASS connects researchers and practitioners working on sovereign AI through regular exchange. This supports mutual understanding and develops shared context across academia, industry, and government."
 audiencesLabel = "Connecting three fields of practice"
 
 formatEyebrow = "02 · Format"
