@@ -2,7 +2,7 @@
 
 ## Status
 
-Implemented; pending GitHub Pages deployment verification
+Accepted
 
 ## Scope
 
@@ -48,7 +48,11 @@ Local verification completed on 2026-07-19:
   `aria-current="page"` state on each page, and no dropdown dependency.
 - The approved operating facts remain present in both language editions.
 
-Pending verification after push:
+Deployment verification completed on 2026-07-19:
 
-- Successful GitHub Actions deployment.
-- Production checks for both language routes and reciprocal selector links.
+- Commit `abe7180` deployed successfully in GitHub Actions run
+  `29678748548`.
+- Both production language routes return HTTP 200 with their complete localized
+  content.
+- Both production headers display direct `繁中` and `EN` links, with the
+  correct active-language state.
