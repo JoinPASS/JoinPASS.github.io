@@ -83,27 +83,46 @@ body {
   color: var(--jp-teal);
 }
 
-.jp-global-lang-button {
+.jp-language-switch {
   align-items: center;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.48);
   border: 1px solid rgba(16, 37, 47, 0.2);
   border-radius: 999px;
-  color: #29434e;
+  display: inline-flex;
+  padding: 3px;
+}
+
+.jp-language-option {
+  align-items: center;
+  border-radius: 999px;
+  color: #49606a;
   display: inline-flex;
   font-size: 0.86rem;
   font-weight: 650;
-  gap: 6px;
+  justify-content: center;
   line-height: 1;
-  min-height: 40px;
-  padding: 9px 14px;
+  min-height: 34px;
+  min-width: 48px;
+  padding: 8px 11px;
   text-decoration: none;
 }
 
-.jp-global-lang-button:hover,
-.jp-global-lang-button:focus-visible {
+.jp-language-option:hover,
+.jp-language-option:focus-visible {
   background: var(--jp-white);
-  border-color: var(--jp-teal);
   color: var(--jp-teal);
+}
+
+.jp-language-option.is-active {
+  background: var(--jp-ink);
+  color: var(--jp-white);
+  cursor: default;
+}
+
+.jp-language-option.is-active:hover,
+.jp-language-option.is-active:focus-visible {
+  background: var(--jp-ink);
+  color: var(--jp-white);
 }
 
 .jp-page {
@@ -719,11 +738,14 @@ button:focus-visible {
     padding-right: 10px;
   }
 
-  .jp-global-lang-button {
-    max-width: 112px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  .jp-language-switch {
+    flex: 0 0 auto;
+  }
+
+  .jp-language-option {
+    min-width: 44px;
+    padding-left: 9px;
+    padding-right: 9px;
   }
 
   .jp-hero {
