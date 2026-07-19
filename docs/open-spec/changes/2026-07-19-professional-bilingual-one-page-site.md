@@ -2,7 +2,7 @@
 
 ## Status
 
-Implemented; pending GitHub Pages deployment verification
+Accepted
 
 ## Scope
 
@@ -107,7 +107,14 @@ Local verification completed on 2026-07-19:
   sections, and no horizontal overflow.
 - Browser console inspection reported no errors or warnings.
 
-Pending verification after push:
+Deployment verification completed on 2026-07-19:
 
-- Successful GitHub Actions deployment.
-- Production HTTP and removed-route checks on GitHub Pages.
+- Commit `3d093b6` deployed successfully in GitHub Actions run
+  `29678467962`.
+- The production root, Traditional Chinese page, and English page each return
+  HTTP 200 from GitHub Pages.
+- The former docs, ground-rules, and internal routes return HTTP 404 in both
+  languages.
+- Production HTML contains the expected section anchors, Academia Sinica and
+  Google Meet public facts, and no email-shaped value or removed-service/private
+  reference.
