@@ -4,7 +4,6 @@ description = "PASS, a small invitation-only community focused on sovereign AI i
 eyebrow = "Academia Sinica · early draft"
 lead = "We are starting the Platform for AI Sovereignty Study, or PASS: a small, invitation-only professional community for people working on sovereign AI in Taiwan. The goal for now is simple: meet regularly, learn from each other's work, and build continuity across academia, industry, and government."
 primaryCta = "Read the ground rules"
-secondaryCta = "Open the internal area"
 metaLabel = "Study group operating summary"
 metaOneLabel = "Cadence"
 metaOneValue = "Three meetings per week over Google Meet."

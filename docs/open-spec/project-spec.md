@@ -2,97 +2,100 @@
 
 ## Purpose
 
-JoinPASS is a professional website for PASS, the Platform for AI Sovereignty
-Study. The public site will be built from this repository and deployed through
-Vercel. Private internal documents that are not webpages will remain in Google
-Drive. Private internal webpages will require Google account authentication and
-whitelist authorization.
+JoinPASS is the public website for PASS, the Platform for AI Sovereignty Study.
+It presents approved public information about the study group in Traditional
+Chinese and English.
+
+The repository and every file generated from it must be treated as public.
+Non-public information, member information, meeting access details, documents,
+and private resource links must not be stored in the repository or published
+on the website. Such information is shared separately through email.
 
 ## Public Website
 
-- Static documentation site generated with Hugo.
-- Preferred Hugo theme: `colinwilson/lotusdocs`.
-- Deployed through the existing Vercel project connected to the GitHub
-  repository `cclljj/JoinPASS`.
-- Public content should be polished, concise, and suitable for an academic or
-  professional study group audience.
-- The initial public content is based on the uploaded one-page ground rules
-  DOCX `PASS_Ground_Rules_1page.docx`.
-- The public information architecture should use a professional, content-rich
-  homepage that presents the study group's positioning and operating model
-  directly, without relying on separate public rule documents for the main
-  narrative.
+- Static website generated with Hugo.
+- Hugo theme: `colinwilson/lotusdocs`.
+- Source hosted in the public GitHub repository `cclljj/JoinPASS`.
+- Built with GitHub Actions and hosted with GitHub Pages.
+- No application backend, database, authentication, authorization, forms, or
+  protected web routes.
+- No runtime dependency on Supabase, Vercel, analytics providers, application
+  APIs, or other non-GitHub application services.
+- Google Fonts is an approved exception and may be used as a public static font
+  resource without application credentials or private data exchange.
+- Public content must be polished, concise, professional, and suitable for an
+  academic or professional study group audience.
+
+## Approved Public Content
+
+The public site may include:
+
+- PASS / Platform for AI Sovereignty Study name, logo, and mission.
+- The Academia Sinica label currently used on the homepage.
+- The meeting cadence of three Google Meet sessions per week.
+- The meeting format of a roughly 40-minute presentation followed by roughly
+  20 minutes of questions and discussion.
+- Member participation expectations, non-attribution norms, and the public
+  summary rhythm currently described by the public ground rules.
+- Public summaries and other material explicitly approved for publication.
+
+Naming Google Meet in public copy does not make it part of the website runtime
+architecture.
+
+## Prohibited Repository and Website Content
+
+The repository and generated site must not contain:
+
+- Member lists, personal email addresses, whitelist records, or account roles.
+- Private meeting URLs, calendar entries, document links, or internal resource
+  identifiers.
+- Private presentations, notes, discussion records, or unpublished summaries.
+- Authentication credentials, API secrets, service-role keys, or private
+  configuration.
+- Pages described as internal, hidden, members-only, or protected.
+
+Removing a page from navigation, robots files, or sitemaps does not make it
+private. Content is eligible for this repository only when it is safe to make
+public permanently.
 
 ## Internationalization
 
-The website must support internationalization from the beginning.
-
 - Required languages: Traditional Chinese and English.
-- Traditional Chinese should be treated as the primary language for Taiwan
-  audiences.
-- English content should be available for public-facing pages and navigation.
-- The Hugo implementation must use a multilingual structure that keeps content,
-  navigation labels, and UI strings translatable.
-- Language switching must be visible and easy to use on public pages.
-- URLs should use stable language-aware paths, such as `/zh-tw/` and `/en/`, or
-  the closest equivalent supported cleanly by the selected Hugo theme.
-- New content must define whether it is available in both languages or
-  intentionally language-specific.
+- Traditional Chinese is the primary language for Taiwan audiences.
+- Language switching must be visible and preserve the corresponding page when
+  a translation exists.
+- URLs must remain stable and language-aware under `/zh-tw/` and `/en/`.
+- New public content must define whether it is bilingual or intentionally
+  language-specific.
 
-## Initial Content Model
+## Public Information Architecture
 
-The first website iteration should include:
+The site includes:
 
-- A bilingual homepage introducing PASS / Platform for AI Sovereignty Study.
-- A bilingual homepage that expands the core community-planning content,
-  including meeting cadence, presentation format, member participation,
-  internal sharing norms, and public summary rhythm.
-- A protected bilingual internal document page for access planning, covering
-  Google Drive document handling and Google account plus Supabase whitelist
-  access for private webpages.
+- A bilingual homepage introducing PASS and its approved operating model.
+- A bilingual public ground-rules page.
+- Future bilingual public summaries or resources only after explicit approval.
 
-## Private Website Area
+There is no internal website area. Private communication and resource sharing
+take place by email outside the website. A public contact address may be added
+only after a role-based address is explicitly approved; personal addresses
+must not be used by default.
 
-Private web content must require:
+## Deployment
 
-- Google account authentication.
-- Supabase-backed authorization.
-- Whitelist membership before access is granted.
-- Role separation between administrators and regular users.
-
-The initial internal web area should be a protected entry point with a small
-set of protected pages rather than a full document or calendar system. Calendar
-and document entries may link out to Google Calendar and Google Drive. The
-internal area may also host low-sensitivity internal planning pages such as the
-access plan, but that plan should not be discoverable through public-facing
-navigation or visible public links. Those Google resources are controlled by
-Google-side permissions and are a separate security boundary from the website.
-
-## Authorization Model
-
-The whitelist must distinguish at least:
-
-- `admin`: Can add, remove, and update whitelist users.
-- `member`: Can access approved private pages.
-
-Authorization decisions must not rely on user-editable metadata. Durable role
-and whitelist state should live in Supabase tables protected by RLS policies or
-server-side checks.
-
-The current Supabase project URL is
-`https://lkdidspebzhqjlleyfep.supabase.co`. Browser code may use the Supabase
-publishable key, but service-role or secret keys must never be exposed to
-browser code or committed to the repository.
-
-## Private Non-Web Documents
-
-Internal non-public files should remain in Google Drive so access can be managed
-through Google Workspace or Google account permissions.
+- GitHub Actions is the only deployment workflow.
+- GitHub Pages is the only website host.
+- The Hugo build must use the GitHub Pages base URL so project-site subpaths
+  work correctly.
+- The deployed artifact is the generated `public/` directory.
+- Application assets must be served from the Pages deployment. The approved
+  Google Fonts stylesheets and font files may be loaded from Google's public
+  static font hosts.
 
 ## Required Development Process
 
 All repository work must follow SSD and OpenSpec:
 
 - Update `docs/open-spec/` before implementation.
-- Keep specs synchronized with implementation decisions.
-- Verify against explicit acceptance criteria before considering work done.
+- Keep specifications synchronized with implementation decisions.
+- Define and verify explicit acceptance criteria before considering work done.

@@ -4,7 +4,6 @@ description = "PASS，一個聚焦台灣 AI 主權與主權 AI 的小型邀請�
 eyebrow = "Academia Sinica · 初版"
 lead = "我們正在建立 AI 主權研究平台（PASS）：一個小型、邀請制的專業社群，串連台灣正在投入主權 AI 的研究者與實務工作者。現階段的重點很單純：定期見面、理解彼此的工作，並讓學研、產業與政府之間的對話更有延續性。"
 primaryCta = "閱讀社群規範"
-secondaryCta = "進入內部區"
 metaLabel = "Study group operating summary"
 metaOneLabel = "會議節奏"
 metaOneValue = "每週三次，採 Google Meet 線上進行。"

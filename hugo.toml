@@ -49,10 +49,6 @@ timeZone = "Asia/Taipei"
   [params.social]
     github = "cclljj/JoinPASS"
 
-  [params.supabase]
-    url = "https://lkdidspebzhqjlleyfep.supabase.co"
-    publishableKey = ""
-
   [params.docs]
     title = "Platform for AI Sovereignty Study"
     pathName = "docs"
@@ -96,11 +92,6 @@ timeZone = "Asia/Taipei"
       url = "docs/"
       identifier = "docs"
       weight = 10
-    [[languages.zh-tw.menu.primary]]
-      name = "內部區"
-      url = "internal/"
-      identifier = "internal"
-      weight = 20
 
   [languages.en]
     title = "Platform for AI Sovereignty Study"
@@ -115,8 +106,3 @@ timeZone = "Asia/Taipei"
       url = "docs/"
       identifier = "docs"
       weight = 10
-    [[languages.en.menu.primary]]
-      name = "Internal"
-      url = "internal/"
-      identifier = "internal"
-      weight = 20

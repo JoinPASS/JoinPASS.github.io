@@ -4,12 +4,12 @@
         <a class="logo" aria-label="Home" href='{{ relLangURL "" }}'>
             <div class="small">
                 {{ with resources.Get "images/logos/mark.svg" }}
-                        {{ .Content | safeHTML }}
+                        {{ replace .Content "/images/logos/pass-mark.png" ("images/logos/pass-mark.png" | relURL) | safeHTML }}
                 {{ end }}
             </div>
             <div class="big">
                 {{ with resources.Get "images/logos/logo.svg" }}
-                        {{ .Content | safeHTML }}
+                        {{ replace .Content "/images/logos/pass-mark.png" ("images/logos/pass-mark.png" | relURL) | safeHTML }}
                 {{ end }}
             </div>
         </a>

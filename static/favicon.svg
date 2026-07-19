@@ -5,6 +5,6 @@
     </clipPath>
   </defs>
   <rect x="2" y="2" width="60" height="60" rx="14" fill="#ffffff"/>
-  <image href="/images/logos/pass-mark.png" x="2" y="2" width="60" height="60" preserveAspectRatio="xMidYMid meet" clip-path="url(#passFaviconClip)"/>
+  <image href="images/logos/pass-mark.png" x="2" y="2" width="60" height="60" preserveAspectRatio="xMidYMid meet" clip-path="url(#passFaviconClip)"/>
   <rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="#dce7ed"/>
 </svg>

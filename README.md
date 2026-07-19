@@ -3,7 +3,12 @@
 Public website source for PASS, the Platform for AI Sovereignty Study.
 
 The site is built with Hugo and Lotus Docs, supports Traditional Chinese and
-English, and is prepared for Vercel deployment.
+English, and is deployed as a public-only static site with GitHub Actions and
+GitHub Pages.
+
+Everything in this repository and in the generated site must be safe to make
+public. Member information, meeting access details, documents, and private
+resource links are shared separately by email and must not be committed here.
 
 ## Development
 
@@ -25,8 +30,9 @@ Build locally:
 hugo build --gc --minify
 ```
 
-Vercel uses `vercel.json` and `build.sh` to install the required Linux build
-tools and generate the static site into `public/`.
+GitHub Actions uses `.github/workflows/hugo.yml` to build the site into
+`public/` and deploy the artifact to GitHub Pages. Repository administrators
+must select **GitHub Actions** as the Pages source in the repository settings.
 
 ## Required Process
 
