@@ -2,7 +2,7 @@
 
 ## Status
 
-Approved for execution
+Accepted
 
 ## Decision
 
@@ -45,4 +45,18 @@ of leaving the former repository unchanged.
 
 ## Verification Notes
 
-Verification pending permanent deletion.
+Deletion and verification completed on 2026-07-19:
+
+- GitHub permanently deleted `cclljj/JoinPASS`; subsequent repository lookup
+  reports it as not found.
+- The former project-site URL `https://cclljj.github.io/JoinPASS/` returns HTTP
+  404.
+- The obsolete local `legacy-origin` remote was removed. `origin` is the only
+  remaining remote and points to `JoinPASS/JoinPASS.github.io`.
+- Local `master` continues to track `origin/master`.
+- The canonical repository remains public, uses `master` as its default
+  branch, and retains `https://joinpass.github.io/` as its homepage.
+- Canonical GitHub Actions run `29679173895` completed successfully for the
+  deletion-decision commit.
+- The canonical production root, `/zh-tw/`, and `/en/` each continue to return
+  HTTP 200 after deletion.
