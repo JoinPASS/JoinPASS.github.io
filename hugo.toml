@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://joinpass.github.io/"
 title = "Platform for AI Sovereignty Study"
 defaultContentLanguage = "zh-tw"
 defaultContentLanguageInSubdir = true

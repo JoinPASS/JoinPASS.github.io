@@ -1,4 +1,4 @@
-module github.com/cclljj/JoinPASS
+module github.com/JoinPASS/JoinPASS.github.io
 
 go 1.21
 

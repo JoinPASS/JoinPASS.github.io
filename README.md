@@ -2,6 +2,9 @@
 
 Public website source for PASS, the Platform for AI Sovereignty Study.
 
+- Production site: <https://joinpass.github.io/>
+- Canonical repository: <https://github.com/JoinPASS/JoinPASS.github.io>
+
 The site is built with Hugo and Lotus Docs, presents one focused public landing
 page in Traditional Chinese and one in English, and is deployed as a
 public-only static site with GitHub Actions and GitHub Pages.
@@ -31,8 +34,9 @@ hugo build --gc --minify
 ```
 
 GitHub Actions uses `.github/workflows/hugo.yml` to build the site into
-`public/` and deploy the artifact to GitHub Pages. Repository administrators
-must select **GitHub Actions** as the Pages source in the repository settings.
+`public/` and deploy the artifact to the GitHub Pages organization site at
+`https://joinpass.github.io/`. Repository administrators must select
+**GitHub Actions** as the Pages source in the repository settings.
 
 ## Required Process
 

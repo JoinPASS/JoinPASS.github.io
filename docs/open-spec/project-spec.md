@@ -15,7 +15,8 @@ on the website. Such information is shared separately through email.
 
 - Static website generated with Hugo.
 - Hugo theme: `colinwilson/lotusdocs`.
-- Source hosted in the public GitHub repository `cclljj/JoinPASS`.
+- Canonical source hosted in the public GitHub repository
+  `JoinPASS/JoinPASS.github.io`.
 - Built with GitHub Actions and hosted with GitHub Pages.
 - No application backend, database, authentication, authorization, forms, or
   protected web routes.
@@ -97,8 +98,10 @@ must not be used by default.
 
 - GitHub Actions is the only deployment workflow.
 - GitHub Pages is the only website host.
-- The Hugo build must use the GitHub Pages base URL so project-site subpaths
-  work correctly.
+- The only production site URL is `https://joinpass.github.io/`.
+- The Hugo build must use the GitHub Pages organization-site base URL, with
+  language pages and assets served from the site root rather than a repository
+  subpath.
 - The deployed artifact is the generated `public/` directory.
 - Application assets must be served from the Pages deployment. The approved
   Google Fonts stylesheets and font files may be loaded from Google's public
