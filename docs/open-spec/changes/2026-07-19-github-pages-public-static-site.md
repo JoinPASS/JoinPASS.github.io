@@ -2,7 +2,7 @@
 
 ## Status
 
-Implemented; pending GitHub Pages deployment verification.
+Accepted
 
 ## Scope
 
@@ -128,6 +128,23 @@ Local verification results:
 - The approved Academia Sinica, three-weekly-meetings, and 40-plus-20-minute
   statements remain in both languages.
 
-After push, verification still requires enabling GitHub Pages with GitHub
-Actions as the source, confirming a successful deployment workflow, and
-checking the public URLs over HTTPS.
+Verified on GitHub after pushing commit `02b800f`:
+
+- Enabled GitHub Pages with GitHub Actions as the publishing source.
+- GitHub Actions run `29677784009` completed both the Hugo build and Pages
+  deployment jobs successfully.
+- GitHub reports the public Pages URL as
+  `https://cclljj.github.io/JoinPASS/`, with HTTPS enforcement enabled.
+- The root URL, both language homepages, both ground-rules pages, and the logo
+  asset returned HTTP `200`.
+- `/zh-tw/internal/` and `/en/internal/admin/` returned HTTP `404`.
+- Production homepage checks found the approved Academia Sinica, meeting
+  cadence, and 40-plus-20-minute statements in both languages, with no
+  internal-area, Supabase, or Vercel text.
+- Updated the GitHub repository homepage URL from the former Vercel address to
+  the GitHub Pages URL.
+
+The repository and public website no longer use Vercel or Supabase. Deleting
+or archiving the now-unused external Vercel and Supabase projects is an
+external administrative cleanup and is not performed by this repository
+change.
