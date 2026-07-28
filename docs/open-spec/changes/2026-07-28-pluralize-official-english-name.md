@@ -2,7 +2,7 @@
 
 ## Status
 
-Implemented; pending GitHub Pages deployment verification
+Accepted
 
 ## Decision
 
@@ -46,7 +46,13 @@ Local verification completed on 2026-07-28:
 - Reciprocal Traditional Chinese and English navigation remains present on
   both generated pages.
 
-Pending verification after push:
+Deployment verification completed on 2026-07-28:
 
-- Successful GitHub Actions deployment.
-- Production checks for both language pages, metadata, logo label, and footer.
+- Commit `6846070` deployed successfully in GitHub Actions run
+  `30320837512`.
+- Both production language pages return HTTP 200 and contain the pluralized
+  official name with no current singular-name occurrence.
+- Production HTML contains the pluralized header-logo accessible label and
+  footer copyright on both language pages.
+- Reciprocal Traditional Chinese and English navigation remains functional in
+  production.
