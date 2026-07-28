@@ -1,12 +1,12 @@
 +++
-title = "Platform for AI Sovereignty Study"
+title = "Platform for AI Sovereignty Studies"
 description = "PASS, an invitation-only professional community focused on sovereign AI in Taiwan."
-eyebrow = "Academia Sinica · Platform for AI Sovereignty Study"
+eyebrow = "Academia Sinica · Platform for AI Sovereignty Studies"
 lead = "An invitation-only professional community connecting researchers and practitioners working on sovereign AI in Taiwan, with sustained exchange across academia, industry, and government."
 primaryCta = "See how PASS works"
 heroNote = "Research · Practice · Public dialogue"
 heroMark = "PASS"
-heroMarkLabel = "Platform for AI Sovereignty Study"
+heroMarkLabel = "Platform for AI Sovereignty Studies"
 
 purposeEyebrow = "01 · Purpose"
 purposeTitle = "Sustained professional exchange across disciplines."

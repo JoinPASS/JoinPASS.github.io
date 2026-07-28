@@ -1,6 +1,6 @@
 # JoinPASS
 
-Public website source for PASS, the Platform for AI Sovereignty Study.
+Public website source for PASS, the Platform for AI Sovereignty Studies.
 
 - Production site: <https://joinpass.github.io/>
 - Canonical repository: <https://github.com/JoinPASS/JoinPASS.github.io>

@@ -1,12 +1,12 @@
 +++
 title = "AI 主權研究平台"
 description = "PASS，一個聚焦台灣 AI 主權與主權 AI 的邀請制專業社群。"
-eyebrow = "Academia Sinica · Platform for AI Sovereignty Study"
+eyebrow = "Academia Sinica · Platform for AI Sovereignty Studies"
 lead = "一個邀請制專業社群，串連台灣投入主權 AI 的研究者與實務工作者，促進學研、產業與政府之間的持續交流。"
 primaryCta = "了解我們如何運作"
 heroNote = "Research · Practice · Public dialogue"
 heroMark = "PASS"
-heroMarkLabel = "Platform for AI Sovereignty Study"
+heroMarkLabel = "Platform for AI Sovereignty Studies"
 
 purposeEyebrow = "01 · 社群定位"
 purposeTitle = "促進跨領域專業交流，建立持續的共同脈絡。"

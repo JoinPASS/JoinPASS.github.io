@@ -1,5 +1,5 @@
 baseURL = "https://joinpass.github.io/"
-title = "Platform for AI Sovereignty Study"
+title = "Platform for AI Sovereignty Studies"
 defaultContentLanguage = "zh-tw"
 defaultContentLanguageInSubdir = true
 enableEmoji = true
@@ -33,7 +33,7 @@ disableKinds = ["taxonomy", "term", "RSS"]
 
 [params]
   description = "A professional study group for AI sovereignty and sovereign AI work in Taiwan."
-  author = "Platform for AI Sovereignty Study"
+  author = "Platform for AI Sovereignty Studies"
   keywords = "sovereign AI, Taiwan, study group, AI governance, research community"
   google_fonts = [
     ["Inter", "300, 400, 500, 600, 700"],
@@ -45,7 +45,7 @@ disableKinds = ["taxonomy", "term", "RSS"]
   mono_font = "Fira Code"
 
   [params.footer]
-    copyright = "© :YEAR: Platform for AI Sovereignty Study."
+    copyright = "© :YEAR: Platform for AI Sovereignty Studies."
 
 [languages]
   [languages.zh-tw]
@@ -73,7 +73,7 @@ disableKinds = ["taxonomy", "term", "RSS"]
       weight = 30
 
   [languages.en]
-    title = "Platform for AI Sovereignty Study"
+    title = "Platform for AI Sovereignty Studies"
     label = "English"
     locale = "en-US"
     contentDir = "content/en"

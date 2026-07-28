@@ -2,7 +2,8 @@
 
 ## Purpose
 
-JoinPASS is the public website for PASS, the Platform for AI Sovereignty Study.
+JoinPASS is the public website for PASS, the Platform for AI Sovereignty
+Studies.
 It presents approved public information about the study group in Traditional
 Chinese and English.
 
@@ -31,7 +32,7 @@ on the website. Such information is shared separately through email.
 
 The public site may include:
 
-- PASS / Platform for AI Sovereignty Study name, logo, and mission.
+- PASS / Platform for AI Sovereignty Studies name, logo, and mission.
 - The Academia Sinica label currently used on the homepage.
 - The meeting cadence of three Google Meet sessions per week.
 - The meeting format of a roughly 40-minute presentation followed by roughly
