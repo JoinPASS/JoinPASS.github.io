@@ -2,7 +2,7 @@
 
 ## Status
 
-Implemented; pending GitHub Pages deployment verification
+Accepted
 
 ## Decision
 
@@ -48,8 +48,12 @@ Local verification completed on 2026-07-28:
 - The 40-minute presentation plus 20-minute discussion format remains present
   and unchanged in both languages.
 
-Pending verification after push:
+Deployment verification completed on 2026-07-28:
 
-- Successful GitHub Actions deployment.
-- Production checks for the revised bilingual cadence and unchanged meeting
-  format.
+- Commit `991eaf3` deployed successfully in GitHub Actions run
+  `30323577784`.
+- Both production language pages return HTTP 200 and display `2× / week` with
+  the corresponding twice-weekly Google Meet wording.
+- Neither production language page contains the former three-meetings cadence.
+- Both production language pages retain the 40-minute presentation plus
+  20-minute questions-and-discussion format.
