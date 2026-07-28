@@ -34,7 +34,7 @@ The public site may include:
 
 - PASS / Platform for AI Sovereignty Studies name, logo, and mission.
 - The Academia Sinica label currently used on the homepage.
-- The meeting cadence of three Google Meet sessions per week.
+- The meeting cadence of two Google Meet sessions per week.
 - The meeting format of a roughly 40-minute presentation followed by roughly
   20 minutes of questions and discussion.
 - Member participation expectations, non-attribution norms, and the public

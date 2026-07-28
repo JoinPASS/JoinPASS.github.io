@@ -45,9 +45,9 @@ text = "Sustaining dialogue around public governance and institutions."
 
 [[formatSteps]]
 number = "01"
-metric = "3× / week"
+metric = "2× / week"
 title = "A regular meeting cadence"
-text = "Three Google Meet sessions each week build continuity without turning the community into an administrative burden."
+text = "Two Google Meet sessions each week build continuity without turning the community into an administrative burden."
 
 [[formatSteps]]
 number = "02"

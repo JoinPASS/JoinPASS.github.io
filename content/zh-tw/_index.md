@@ -45,9 +45,9 @@ text = "延續公共治理與制度面的對話。"
 
 [[formatSteps]]
 number = "01"
-metric = "3× / week"
+metric = "2× / week"
 title = "固定會議節奏"
-text = "每週透過 Google Meet 開會三次，以穩定頻率累積理解，而不把社群變成行政負擔。"
+text = "每週透過 Google Meet 開會兩次，以穩定頻率累積理解，而不把社群變成行政負擔。"
 
 [[formatSteps]]
 number = "02"
